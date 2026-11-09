@@ -28,8 +28,9 @@ An unofficial fan-made digital version of **Twilight Imperium 4th Edition** for 
 - `GUIDE.txt` (in the download, and `package/README.txt` here) explains the controls and lists what is new in
   each version.
 
-The downloads on GitHub come without the music tracks; the game plays without them. If you have an MP3 you want
-as music, name it `music.mp3` and put it next to the game.
+The downloads include the soundtrack by **Michael Keane** (see Credits). The music files are not in this source
+repository; a build from source plays without music unless you put the MP3s next to the game (any MP3 named
+`music.mp3` works too).
 
 ## Building from source
 Linux (x86-64) with a C++17 compiler and Python 3 (numpy, scipy, Pillow for the art tools):
@@ -44,6 +45,9 @@ make linux-package                                 # dist/TI4-SteamDeck-<version
 `ti4 --simulate N` plays N computer-only games and checks every answer against the rules.
 
 ## Credits and licences of included parts
+- Music by **Michael Keane** - *The Council Keleres* and *Infiltration* (Embers of the Imperium), *Action*
+  (Twilight Symposium). The composer made them for public use and asks only for credit; he is also named on
+  the game's Credits screen.
 - Game data (tiles, planets, units, factions, objectives) generated from the
   [AsyncTI4](https://github.com/AsyncTI4/TI4_map_generator_bot) bot's data set.
 - Discordant Stars factions: the Discordant Stars fan expansion and its authors.
