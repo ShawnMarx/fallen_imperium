@@ -1,0 +1,28 @@
+// Windows resources: the program icon and the version shown in Properties.
+#include <winver.h>
+#include "version.h"  // written by the Makefile from src/app/app.h
+
+1 ICON "ti4.ico"
+
+1 VERSIONINFO
+FILEVERSION     TI4_VER_NUM
+PRODUCTVERSION  TI4_VER_NUM
+FILEOS          VOS_NT_WINDOWS32
+FILETYPE        VFT_APP
+BEGIN
+  BLOCK "StringFileInfo"
+  BEGIN
+    BLOCK "040904B0"
+    BEGIN
+      VALUE "FileDescription", "Twilight Imperium (unofficial fan project)"
+      VALUE "ProductName", "Twilight Imperium"
+      VALUE "FileVersion", TI4_VER_STR
+      VALUE "ProductVersion", TI4_VER_STR
+      VALUE "OriginalFilename", "TwilightImperium.exe"
+    END
+  END
+  BLOCK "VarFileInfo"
+  BEGIN
+    VALUE "Translation", 0x409, 1200
+  END
+END

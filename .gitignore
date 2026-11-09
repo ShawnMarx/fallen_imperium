@@ -1,0 +1,9 @@
+build/
+dist/
+*.ppm
+ti4.log
+launch_log.txt
+settings.cfg
+__pycache__/
+assets/music/
+ti4.prev.log

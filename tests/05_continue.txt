@@ -1,0 +1,27 @@
+# Save and quit, then continue the saved game from the title screen.
+wait 5
+press A
+wait 5
+press START
+wait 20
+mash 30
+wait 10
+shot before_quit
+press MENU
+wait 3
+press UP
+wait 3
+press A
+wait 120
+shot title_with_continue
+press A
+wait 30
+shot continued
+press MENU
+wait 3
+press UP
+wait 3
+press A
+wait 10
+press MENU
+wait 3

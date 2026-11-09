@@ -1,0 +1,154 @@
+# Lines one faction says only to another (rivals, kin, old grudges) - chosen first (2 times in 3), the faction's
+# generic lines otherwise. Format: [pair speaker > listener], then category: line (see BRIEF.md). The first three
+# are the lines of the owner-approved codec mock-ups.
+
+[pair mahact > nivyn]
+vote: Star Kings. You claim the spaces between the stars? We ruled the stars themselves. Your votes on this agenda, little king - and perhaps you keep your throne.
+
+[pair muaat > bastion]
+betray: Your walls held through a hundred wars, Bastion. Let's see how they hold when they're molten.
+
+[pair bastion > muaat]
+betrayed: Muaat fire inbound! Seal the bulkheads, all hands to stations! We've outlived worse than a tantrum!
+
+# --- old enemies
+[pair letnev > sol]
+offer: The Federation, still playing at empire? The Barony offers terms. Do try to read them before your committees vote.
+betray: Did you truly believe the Barony forgave Sol, {them}? We merely waited for the right moment.
+
+[pair sol > letnev]
+offer: Barony. The Federation remembers every border you've crossed. Still, we're willing to talk - read these terms carefully.
+betrayed: {them}, the Federation expected nothing less from the Barony. Our fleets were never stood down.
+
+[pair hacan > mentak]
+offer: Mentak. Here is a deal - signed, sealed, and NOT an invitation to raid our caravans afterwards.
+betrayed: A pirate's word, worth exactly what we paid for it. The Emirates will be pricing your head, {them}.
+
+[pair mentak > hacan]
+offer: Hacan! My favourite customers. Pay the Coalition's toll today and your caravans sleep soundly tonight.
+
+[pair keleres > mentak]
+offer: Keleres to Mentak. We know your record. Clean deal, clean conscience - first time for everything, over.
+threat: Mentak vessels, this is Keleres command. You are out of compliance. Accept these terms or be boarded.
+
+[pair mentak > keleres]
+offer: Well, if it isn't the space police. Here's a deal, officers. Totally legal. Probably.
+
+[pair keleres > tnelis]
+offer: Keleres to the Syndicate. We're watching every ledger you own. Here's a legitimate deal - try one for a change.
+
+[pair tnelis > keleres]
+offer: Officers, please, sit. The family always cooperates with the law. A little something for the precinct.
+
+[pair keleres > florzen]
+offer: Keleres to Florzen vessels. This is a lawful offer. Take it before we take your ships, over.
+
+[pair florzen > mentak]
+offer: Mentak! Fellow pirates! Let's not bleed each other - there's loot enough out there for both of us.
+
+[pair mentak > florzen]
+offer: The Florzen. Pirates without manners. Here's a deal - and keep your raiders out of our lanes.
+
+# --- the heirs of the Lazax and the Mahact they overthrew
+[pair mahact > l1z1x]
+offer: Machines wearing the Lazax name. Your masters stole our thrones, and you inherited their debts. Pay them.
+
+[pair mahact > winnu]
+offer: Winnu. You crave the throne of Mecatol? We sat upon it before your kind could crawl. Take our terms.
+
+[pair l1z1x > mahact]
+offer: Mahact remnant. The Lazax overthrew you once. This offer is mercy. Comply, and remain overthrown quietly.
+
+[pair l1z1x > winnu]
+offer: Winnu servant. The Lazax have returned. Kneel, as your ancestors knelt, and submit your tribute.
+
+[pair winnu > l1z1x]
+offer: Machines wearing a dead empire's name. The Winnu need no Lazax ghosts - but we will take your trade.
+betrayed: {them}, you are what is left of our old masters - and now we know what it is worth. Nothing.
+
+[pair mahact > edyn]
+offer: Little Mandate. You wear our crowns and preach mercy. Bargain with your elders, and remember who made you.
+
+[pair edyn > mahact]
+offer: We remember what you were, Mahact. We chose to be better. These terms are fair - more than you ever offered anyone.
+
+[pair nivyn > mahact]
+offer: Mahact. You ruled the stars once. We rule the dark between them still. Let kings deal as kings.
+
+# --- kin
+[pair jolnar > deepwrought]
+offer: Cousins! Still giving your discoveries away for free? Charming. Here is a transaction, as civilised minds conduct them.
+betray: Sentiment is not a variable, {them}. Our shared ancestry was never part of the model.
+
+[pair deepwrought > jolnar]
+offer: Dearest cousins! We found a little something for you on the sea floor. Please, no charge - well, almost none.
+betrayed: {them}... our own cousins. We shared everything with you. The data is conclusive, and it is heartbreaking.
+
+[pair crimson > ghost]
+offer: ...Creuss. Still whole. Still hoarding the light. Give us a little of it... you owe us that much.
+betray: ...you never shared, {them}. So now we take. All of it.
+
+[pair ghost > crimson]
+offer: ...the broken ones return. We offer this... and nothing more. Do not reach for the rest.
+betrayed: ...we knew, {them}. We always knew what you would become. The gates are closed to you.
+
+[pair kyro > yin]
+offer: Brothers of the greyfire! We too carry a blessed sickness. Kin in suffering should trade as kin.
+
+[pair yin > kyro]
+offer: Plague-bearers. The greyfire is a holy trial, not a toy. Still, the Brotherhood will hear your offer.
+
+# --- natural enemies and natural partners
+[pair ralnel > hacan]
+offer: Hacan. You run the markets, we run the routes. Partners? Quick answer, please - the market moves.
+
+[pair hacan > ralnel]
+offer: Ral Nel! Swift couriers and sharp ledgers - the Emirates admire both. Come, let us make the markets sing.
+
+[pair vaden > hacan]
+offer: Emirates. Your caravans already run on Vaden credit, whether you know it or not. Let's make it official.
+
+[pair hacan > vaden]
+offer: Vaden! You lend at rates that would shame a pirate. Still, the Emirates can bargain with bankers. Here.
+
+[pair axis > nokar]
+offer: The Sellships! Competitors, yes, but such good customers. Our hulls, your crews - think of the profit.
+
+[pair nokar > axis]
+offer: Shipwrights. You build them, we fly them into the fire. Let's split the money and both get rich.
+
+[pair freesystems > letnev]
+offer: Barony. Your people deserve to be free, but for now we deal with their masters. Fair terms - not tribute.
+
+[pair letnev > freesystems]
+offer: The Compact - all those little worlds pretending to be nations. Adorable. Here are your terms.
+
+[pair arborec > muaat]
+offer: Muaat. You burn. We grow. These terms keep your fire away from The Green. That is all we require.
+
+[pair muaat > arborec]
+threat: Arborec, you are made of kindling. Accept our terms, and your forests stay green another day.
+
+[pair khrask > muaat]
+offer: Children of fire... you burn what took ages to grow. Take this... and let one forest live.
+
+[pair firmament > cabal]
+offer: Devourer. The Five shelter this galaxy from things like you. Still... even you may be offered peace.
+
+[pair cabal > firmament]
+offer: Guardians... so many worlds sheltered beneath your wings, like a table laid for us. Shall we talk?
+
+[pair kolume > nekro]
+offer: Machine to machine... this one sees in you a mind that knows only endings. Even so, this one offers peace.
+
+[pair nekro > kolume]
+offer: Meditation | Irrelevant
+
+[pair rohdhna > l1z1x]
+offer: Fabrication Code 3-3L classifies your hardware as obsolete, L1Z1X. Upgrades are available. Terms attached.
+
+[pair augers > nomad]
+offer: Nomad. We have seen the future you are running from. Accept this, and it arrives a little later.
+
+[pair nomad > augers]
+offer: Seers. You watch the future; I fight it. Help me, and there will be a future left to watch.

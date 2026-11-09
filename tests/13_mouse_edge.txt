@@ -1,0 +1,66 @@
+# Mouse at the edge of the screen (0.33.1, owner: with Voidfall the camera snapped to the edge of the board):
+# zoomed in, the pointer walks to the edge of the map; the camera must not move.
+wait 5
+press DOWN
+wait 2
+press DOWN
+wait 2
+press DOWN
+wait 3
+shot me_title_simple
+press RIGHT
+wait 6
+wait 3
+press RIGHT
+wait 6
+shot me_title_voidfall
+press UP
+wait 2
+press UP
+wait 2
+press UP
+wait 3
+press A
+wait 5
+press UP
+wait 2
+press RIGHT
+wait 2
+press UP
+wait 2
+press RIGHT
+wait 2
+press START
+wait 40
+shot me_draft
+press A
+wait 30
+press A
+wait 40
+mouse 210 240
+wait 3
+wheel 5
+wait 30
+shot me_zoomed
+mouse 300 240
+wait 3
+mouse 360 240
+wait 3
+mouse 400 240
+wait 3
+mouse 415 240
+wait 3
+mouse 419 240
+wait 10
+shot me_right_edge
+mouse 210 240
+wait 3
+mouse 210 120
+wait 3
+mouse 210 60
+wait 3
+mouse 210 30
+wait 3
+mouse 210 23
+wait 10
+shot me_top_edge

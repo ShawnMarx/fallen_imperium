@@ -1,0 +1,293 @@
+# Negotiation lines - Discordant Stars factions, part 1 (ds1)
+# Voices follow docs/owner/negotiation/Negotiation_Line_Gists.txt and tools/lines/BRIEF.md.
+# Factions the owner was unsure about (Bentor, Cheiran, Ghoti, Kollecc, Kortali) have an
+# invented voice in their voice: line for him to review.
+
+[axis]
+name: Shipwrights
+voice: Cheerful arms dealers who profit from war and peace alike - a salesman's patter where every deal is a sale and every war is good business.
+offer: Peace or war, {them}, the Shipwrights always have something you need. Shall we talk business?
+offer: A fine deal for a fine customer. Sign now - our yards are busy and the war won't wait.
+offer: Every fleet in the galaxy floats on a Shipwright hull. Let us make this one profitable for both of us.
+friendly: For an old customer, the good price. Our yards remember who pays on time.
+threat: Our ships go to whoever pays. Refuse us, and your neighbours will be buying them to use on you.
+vote: Wars start in the Council, and wars are good for business. Lend us your votes and we will make it worth your while.
+accept: Sold! A pleasure doing business. Do come back when the shooting starts.
+accept: Done and done. The ink dries faster than our paint, and both will outlast a ceasefire.
+decline: No sale. We don't build at a loss, not even for the heroes of the galaxy.
+decline: That offer wouldn't buy a hull plate. Try again once you've priced a war.
+counter: Close, but the yards have overheads. Here is what the market will bear.
+betray: Nothing personal, {them}. Your rivals made a better offer, and we always sell to the highest bidder.
+betrayed: Breaking a contract with the Shipwrights, {them}? Every yard in the galaxy will hear you're a bad customer.
+
+[bentor]
+name: Bentor
+voice: Brisk treasure-hunting company men - a prospecting conglomerate that talks in ventures, claims, shares and dividends, always eager for the next big find.
+offer: The Conglomerate has a venture in mind, {them}. Low risk, fair shares, and who knows what we'll dig up together.
+offer: Our surveyors ran the numbers on this one. It pays out for both of us - the Bentor never stake a bad claim.
+offer: Consider this an investment. The galaxy is full of buried fortune, and partners find it faster.
+friendly: For a trusted partner, preferred shares. You've never let a venture of ours go bust.
+threat: This is a buyout offer, not a request. Take it, or the Conglomerate digs through what's yours anyway.
+vote: The Council's ruling could move the markets. Vote with the Conglomerate and share in the dividend.
+accept: Splendid, a sound investment! Mark it in the ledger and on the map.
+accept: Deal struck. The Board will be delighted - and so, we expect, will you.
+decline: Our analysts say no. There's no treasure in that offer, only a hole.
+decline: Pass. We know a dry dig when we see one.
+counter: Promising, but the margins are thin. Our prospectors drew up better terms - have a look.
+betray: The Board has voted to liquidate our arrangement, {them}. Your share has been... reallocated.
+betrayed: A breach of partnership, {them}? The Conglomerate writes off bad debts - but never forgets the debtor.
+
+[kjalengard]
+name: Berserkers
+voice: Proud, loud space-Nordic warriors who live for battle and sagas; trade bores them and they say so, but a sworn oath is a sworn oath.
+offer: Bah, haggling. Fine, {them} - take this deal and let us get back to the fighting.
+offer: The skalds sing of battles, not bargains. Still, here are our terms. Be quick about it.
+offer: Hear the Berserkers! We offer this, and we offer it once. Then we go back to sharpening our axes.
+friendly: You fought well beside us, shield-friend. Take this, and may your saga be a long one.
+threat: Agree, or we come for you with fire and frost. Truly, we hope you refuse - it has been a dull season.
+vote: Council squabbling puts us to sleep. Give us your votes and we'll go find something worth fighting.
+accept: Ha! Agreed. Now pour the mead and let us speak of war instead.
+accept: So be it - sworn on the frozen halls of our fathers. Now leave us to our blades.
+decline: No. That offer is weaker than a thrall's handshake. Come back with steel in your voice.
+decline: Refused. Bring us a war, not a ledger - we nearly fell asleep.
+counter: Too soft. Take the Berserkers' terms, or take up arms. We would prefer the arms.
+betray: Our oath is broken, {them}, and our axes are out. Nothing personal - you will make a fine saga.
+betrayed: Oathbreaker! {them}, the skalds will sing of how you fell to us. Arm yourselves.
+
+[celdauri]
+name: Celdauri
+voice: Cautious, polite trade-port merchants who keep everything businesslike and quietly remind you their docks are heavily armed; warm and generous to "preferred clients".
+offer: The Confederation extends a proposal, {them}. Fair terms, honestly kept - and we expect the same of you.
+offer: Commerce is best conducted in calm skies. Our offer is attached; our guns, of course, stay in port.
+offer: We prefer trade to trouble. Review these terms at your leisure - our docks are open, and well guarded.
+friendly: For a preferred client, our best rates and our warmest regards. The Confederation values your custom.
+threat: We would rather not discuss this down the barrel of a gun. Accept, and the barrels stay cold.
+vote: Stable laws mean stable markets. Support our position in the Council and our ports will remember it.
+accept: Agreed. The Confederation will record the contract and honour it to the letter.
+accept: A sound arrangement. Do pass through our ports any time - peacefully, of course.
+decline: We must respectfully decline. The risk outweighs the return, and we do not gamble.
+decline: Regrettably, no. Please don't take it personally - and please don't take it further.
+counter: Not quite workable as written. Our clerks have amended the terms - we think you'll find them fair.
+betray: Our accountants have reassessed you, {them}. You are no longer a client - you are a liability.
+betrayed: A broken contract, {them}. Our ports are closed to you, and our guns are no longer staying in port.
+
+[cheiran]
+name: Cheiran
+voice: A heavy, territorial crustacean horde - slow, blunt, speaks as "the Horde", proud of thick shells and endless broods, claws clacking (klk) now and then; peaceful until poked.
+offer: Klk-klk. The Horde offers this to {them}. Take it, and stay off our shell.
+offer: We are many and our shells are thick. Still, the Horde would rather trade than crack you open.
+offer: Simple deal. Simple terms. The tide comes in, the tide goes out, and the Horde keeps what it holds.
+friendly: You do not poke at our shell, so the Horde is good to you. Take this, broodfriend.
+threat: Leave the Horde's waters, or we come. We are slow, but we never stop, and our claws never tire.
+vote: The Council chatters like small fish. Give the Horde your votes and we will chatter back for you.
+accept: Good. The Horde agrees. We bury this deal deep in the sand where it stays safe.
+accept: Klk... yes. Done. Now go, before the brood gets curious.
+decline: No. The Horde does not want this. Our claws stay closed.
+decline: Too thin, like a fresh moult. We refuse.
+counter: Not like this. The Horde snaps your offer in half and sends back the better half.
+betray: The shell turns, {them}. The Horde needs your waters now. Do not take it hard - we never do.
+betrayed: {them} cracked our trust like a shell. But we grow new shells, and we remember. Klk.
+
+[cymiae]
+name: Cymiae
+voice: Savage cybernetic brutes barely holding back their rage - they demand blood and war against everyone, and the anger keeps boiling over mid-sentence in shouted capitals.
+offer: Take this deal, {them}, before we lose our patience. We do NOT have much patience.
+offer: We offer terms. TERMS! When we would rather offer BLOOD. Accept quickly.
+offer: Our blood is boiling and our blades itch. Sign this, so we can point them at someone else.
+friendly: You... we like you. We will not smash you. Today. Take this deal before we change our minds.
+threat: Do what we say or we tear your worlds apart! PLEASE refuse. We want to.
+vote: The Council is all talk! Give us your votes, or we make it hear us SMASHING things.
+accept: Fine. FINE! Agreed. Now get out of our sight before the rage comes back.
+accept: Yes! Deal! ...We are calm. We are calm. It is done.
+decline: NO! That offer is an insult and now we want to break something.
+decline: Refused! Be glad we answer with words and not with war.
+counter: Grrr... not that. THIS. Take our terms or take our fists.
+betray: We held it in as long as we could, {them}. Now the blood is coming, and it is YOURS!
+betrayed: Liar! {them}, we will hunt you across the galaxy until there is nothing left to hunt!
+
+[dihmohn]
+name: Dih-Mohn
+voice: A wandering flotilla - gentle and soft-spoken like the Saar, a little cryptic like the Empyrean, never malevolent but always wary of strangers; talks of drifting, currents and passing through.
+offer: The Flotilla drifts near your borders, {them}. We would pass in peace - and leave a gift for the passage.
+offer: We wander, we do not conquer. Consider these terms, and let the void between us stay quiet.
+offer: Our fleet has seen many stars and trusted few of them. Perhaps this deal makes you one of the few.
+friendly: Old friend of the long drift, take this. Few have earned a place in the Flotilla's memory.
+threat: We ask gently, and only once. Turn aside, or the Flotilla stops drifting and starts defending.
+vote: Laws are anchors, and anchors sink wanderers. Lend us your votes, and we keep the lanes open for all.
+accept: Agreed, softly. May the currents carry you kindly.
+accept: Yes. We will keep this promise as we keep our ships - close, and always moving.
+decline: No. The currents do not favour this... and neither do we.
+decline: We will drift on without it. Do not follow us.
+counter: Not quite. The Flotilla has sailed long enough to know a safer course - here it is.
+betray: We are wanderers, {them}. Today the current pulls us away from our word. Forgive us, or don't.
+betrayed: We let you close, {them}. The void remembers broken promises, and so does the Flotilla.
+
+[edyn]
+name: Edyn
+voice: The galaxy's gracious lawgivers - a peaceful "Mahact": ancient, regal and commanding but benevolent, speaking in decrees and blessings and treating obedience as a kindness.
+offer: The Mandate extends its grace to {them}. Accept these terms, as a child accepts a gift from an elder.
+offer: Long before your stars were named, our kind kept order. Let this agreement be a small part of that order.
+offer: We do not command today. We offer. Take this, and know that the Mandate's favour is not given lightly.
+friendly: You have walked well under our law. Receive this blessing, and the Mandate's lasting favour.
+threat: It is decreed: yield in this, or the Mandate will impose its peace upon you. We would rather not.
+vote: Law is our oldest gift to the galaxy. Let your votes follow the Mandate, and the Council will know peace.
+accept: Accepted, and so it is written. The Mandate keeps its word for ages.
+accept: Graciously received. Go in peace, under the shelter of our law.
+decline: No. The Mandate does not bend to this, though it forgives you for asking.
+decline: Denied, gently. Return when your offer honours the order of things.
+counter: Your offer is unfinished. The Mandate has completed it - receive the proper terms.
+betray: The law has changed, {them}, and you now stand outside it. Do not resist - it is a mercy.
+betrayed: You broke faith with the Mandate, {them}. The law is patient, but its judgement is certain.
+
+[florzen]
+name: Florzen
+voice: Pirates like the Mentak but meaner - greedy, loud and openly aggressive; every offer is half a shakedown and they would happily fight over the loot.
+offer: Ahoy, {them}! The Profiteers have a deal for you. It's fair by pirate standards - which means take it.
+offer: Here's our price, and it's not going down. Pay up and keep your hull in one piece.
+offer: Profit is profit, and blood is a bonus. Sign here, and maybe we only take the profit.
+friendly: You're good loot-mates. Take this - an honest pirate's share, and no knives in it. This time.
+threat: Hand it over or we board you, strip you and sell the parts. Your choice, but choose fast.
+vote: Council votes are just loot with paperwork. Give us yours, and we'll split the spoils.
+accept: Har! Done! Pleasure robbing - er, trading with you.
+accept: Deal. Load it up, quick, before we change our minds and take the lot.
+decline: That's not a deal, that's an insult. Be glad we're only saying no.
+decline: Nah. We've pulled bigger prizes out of wrecks. Try harder.
+counter: Cute offer. Here's the real one - and the price went up while you were talking.
+betray: Sorry, {them}. Pirates, remember? We were always going to rob you. Today's the day.
+betrayed: Double-cross the Florzen, {them}? We'll strip your fleet down to the last bolt!
+
+[freesystems]
+name: Free Systems
+voice: The idealistic voice of the independent worlds - comradely, egalitarian and liberty-minded; preaches freedom, fair trade and solidarity, and insists on being treated as an equal.
+offer: A fair offer from free worlds to {them}. No masters, no tribute - only equals trading as equals.
+offer: Every world deserves a fair share. These terms give you yours, and ask only ours in return.
+offer: Comrade, the Compact believes in open hands, not iron fists. Let this deal prove we can share the stars.
+friendly: To a true comrade of the free worlds - take this in solidarity. What is ours is shared with friends.
+threat: The Compact will not be bullied, nor stand by while others are. Agree, or face a galaxy united against you.
+vote: The Council belongs to all worlds, not just the strong. Vote with the Compact, and every voice gets heard.
+accept: Agreed! A fair deal, freely made. This is how the galaxy should work.
+accept: Solidarity accepted, comrade. The free worlds will honour it.
+decline: No. That deal serves only one side, and the Compact will not sign away its freedom.
+decline: We refuse. Come back when you're ready to treat us as equals.
+counter: Almost fair. We have balanced the scales a little - now it serves us both.
+betray: Freedom sometimes means breaking chains, {them} - even the ones we forged with you.
+betrayed: You betrayed free peoples, {them}. Every independent world will hear of this.
+
+[ghemina]
+name: Ghemina
+voice: Viking raider royals speaking as two - the Lord opens, gruff and boastful, and the Lady finishes, cold and sharp; she always has the last word.
+offer: We have raided far, {them}, and we bring you terms... || ...which you would be wise to take.
+offer: The Raiders offer a deal. A good one, by our measure... || And our measure is the only one that counts.
+offer: My Lady and I have spoken of you... || ...and agreed you are worth more alive. For now.
+friendly: You have feasted at our table and fought at our side... || ...so take this, and stay a friend.
+threat: Do as we ask, or our longships come at dawn... || ...and there will be nothing left of you by dusk.
+vote: The Council fusses over its little laws... || ...and our votes go where our raiders profit. Join us.
+accept: Agreed! Let the halls hear of it... || ...and let no one say we give our word lightly.
+accept: We accept your terms... || ...this once.
+decline: Hmm. We could perhaps be persuaded... || We could not.
+decline: Your offer is generous, I suppose... || No. It is not.
+counter: Close, but it lacks something... || ...our terms. Here they are.
+betray: We hold you no ill will, {them}... || ...but raiders raid. Brace yourselves.
+betrayed: You dare break faith with the Ghemina, {them}? || Then we will take our payment in fire.
+
+[ghoti]
+name: Ghoti
+voice: Calm, warm deep-void wanderers who speak as one shoal around their mother-ship, the All Mother; watery idioms (currents, tides, depths, schools), unhurried and content in empty space.
+offer: The shoal swims near {them}. Let our currents mingle - this deal feeds us both.
+offer: The All Mother bids us share. Take these terms, and our wake will be gentle on your shores.
+offer: Out in the deep, empty places we find what others miss. Here is a fair catch for you.
+friendly: Swim with us always, friend of the shoal. The All Mother sends this with her warmth.
+threat: Leave our waters, or the whole school turns on you at once. The deep is wide, but not for you.
+vote: Laws are nets, and the shoal hates nets. Lend us your votes, and the open deep stays open.
+accept: Gladly. The shoal agrees, and the currents carry it home.
+accept: Yes. The All Mother approves, and so we swim on together.
+decline: No. The current runs the other way on this one.
+decline: Too shallow for us. The shoal turns away.
+counter: Not this tide. The All Mother has shaped better terms - let them drift your way.
+betray: Forgive us, {them}, but the shoal must feed. The tide has turned and you are in its path. Swim fast.
+betrayed: You muddied our waters, {them}. The shoal will not forget the taste of it.
+
+[gledge]
+name: Gledge
+voice: Tired, plain-spoken blue-collar miners of the Union whose whole life is work and sleep - shift talk, overtime and union rules, with no patience for speeches.
+offer: Look, {them}, we've got a shift to get back to. Here's the deal - honest work, honest pay.
+offer: The Union drew this up on our break. It's fair. Sign it so we can get back to the dig.
+offer: Nobody gets rich on fancy talk. Plain offer, plain terms, and we all go home tired but paid.
+friendly: You've always pulled your weight with us. Union rate for a good mate - take it.
+threat: Clear off our claim or we bring the drills, the whole shift, and no lunch break. Your call.
+vote: Council politics don't dig ore. Give us your votes and we'll make sure the workers get a fair shake.
+accept: Yeah, alright. Done. Now let us clock out in peace.
+accept: Works for us. The Union stamps it, and we're back down the shaft.
+decline: No. That's a longer shift for the same pay. The Union says no.
+decline: Not worth the overtime. Pass.
+counter: Close, but the steward won't sign that. Here's what the Union can live with.
+betray: Sorry, {them}. Times are hard and the Union's got mouths to feed. Contract's off.
+betrayed: We worked honest for you, {them}, and you cheated the Union. The whole crew walks - straight at you.
+
+[augers]
+name: Augurs
+voice: Seers who speak as if the meeting is already over - they have seen the outcome and calmly describe what you have "already" done; serene, certain and a little unsettling.
+offer: We have already seen you accept this, {them}. Let us simply arrive at that moment together.
+offer: This deal was signed in every future we looked upon. We are only delivering the paperwork.
+offer: You will hesitate, then agree. We know. Shall we skip the hesitation?
+friendly: In the futures where we stand together, you prosper. Take this - we have seen you smile at it.
+threat: In every thread where you refuse, your fleet burns. We would spare you that future. Choose wisely.
+vote: The Council's vote ends as we have seen it end. Cast yours with ours, and be on the right side of it.
+accept: Yes. As foreseen.
+accept: Of course we accept. We accepted before you even asked.
+decline: No. We have seen where this deal leads, and you would not like it either.
+decline: Declined - as you already knew we would.
+counter: Not these terms. We have seen the version you will truly accept - here it is.
+betray: You did not see this coming, {them}. We did. We always did.
+betrayed: We foresaw your betrayal, {them}. We also foresaw what comes after - for you.
+
+[kollecc]
+name: Kollecc
+voice: A genteel, secretive society of collectors - soft, polite and curator-like, covetous of rare things, always hinting that their fleet is bigger than what you can see.
+offer: The Society takes an interest in {them}. A modest exchange, discreetly arranged - nothing anyone else needs to see.
+offer: What a curious offer we have for you. Consider it a gesture between collectors of fine things.
+offer: We prefer to deal quietly, away from prying eyes. These terms are quiet... and quite generous.
+friendly: For a dear friend of the Society, terms we offer to very few. Do treasure them.
+threat: Accept, please. You cannot see all of our ships, and we would hate for you to meet the rest of them.
+vote: A vote is a small thing, easily misplaced. Lend us yours, and the Society will owe you a quiet favour.
+accept: Delightful. It shall go into the catalogue with care.
+accept: Accepted, quietly. No one else need know. They rarely do.
+decline: Hm. Not a piece we wish to collect. We decline, politely.
+decline: No, thank you. The Society has seen better offers in shadier places.
+counter: Almost worthy of the collection. We have adjusted the terms - discreetly, of course.
+betray: Did you think you were our partner, {them}? You were our acquisition. The fleet you never saw says hello.
+betrayed: How careless of you, {them}. The Society catalogues every slight... and collects on each one.
+
+[kolume]
+name: Kolume
+voice: Robot monks in calm, introspective space-Buddhist reflection on impermanence, stillness, balance and the turning of the universe; gentle and unhurried, calls itself "this one".
+offer: All things flow, {them}, even fleets and fortunes. Let this exchange flow between us in balance.
+offer: This one has meditated upon your needs and ours. The offer is the shape of that stillness.
+offer: Stars are born and stars go dark. In between, there is time for a fair exchange.
+friendly: A friend is a quiet place in a loud universe. Accept this, with gratitude.
+threat: No conflict is sought. Yet even a stone in the river is moved in time. Step aside, or be moved.
+vote: Laws are ripples on the surface of a deep pool. Let your votes join ours, and the water will settle.
+accept: Accepted. The circuit closes, and the balance is kept.
+accept: Yes. In agreement, as in silence, there is peace.
+decline: No. This path does not lead toward balance.
+decline: Declined, without anger. Let the offer pass, as clouds pass the moon.
+counter: Your offer is almost whole. This one has added what was missing - consider it.
+betray: All bonds are impermanent, {them}. Ours has reached its end. Do not cling to it.
+betrayed: You broke the bond, {them}. This one feels no anger, only clarity - and clarity sees you plainly now.
+
+[kortali]
+name: Kortali
+voice: Stern, zealous judges of the Tribunal in service to their Queen - formal courtroom language of verdicts, sentences and judgement, unforgiving of the guilty.
+offer: The Tribunal summons {them} to terms. Hear the proposal, and answer before the court.
+offer: By the Queen's leave, we set this agreement before you. The Tribunal judges it fair.
+offer: Justice and profit need not quarrel. This offer serves both, as the Queen intends.
+friendly: You stand in good standing before the Tribunal. The Queen extends her favour - accept it.
+threat: The verdict is already written: comply, or the sentence will be carried out by our fleets.
+vote: The Council is a lesser court, but a court still. Vote as the Tribunal rules, and the Queen will remember.
+accept: The court accepts. Let it be entered into the record.
+accept: Approved, by order of the Queen. See that you honour it.
+decline: Rejected. The Tribunal finds your offer wanting.
+decline: Denied. Your petition has no merit before this court.
+counter: Amended by the court: these are the corrected terms, and the ruling is final.
+betray: Your case has been reviewed, {them}. The verdict is guilty, and the sentence begins now.
+betrayed: Oathbreaker! {them}, you stand accused before the Queen, and the Tribunal will see you punished.

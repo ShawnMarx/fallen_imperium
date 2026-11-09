@@ -1,0 +1,291 @@
+# Negotiation lines - Discordant Stars factions, part 2
+# Format and rules: tools/lines/BRIEF.md. {them} = the listener's name: field.
+
+[khrask]
+name: Khrask
+voice: Ancient living stone - slow, gravelly, pausing between words; every line is patient sage advice about protecting the living world.
+offer: Hear the stone, {them}... Take this offer, and let both our worlds keep their forests a while longer.
+offer: A mountain is built... one pebble at a time. So is trust. Here... is our pebble.
+offer: Roots grow slowly... and live long. Agree to this, and let the green things grow in peace between us.
+friendly: Old friend... the soil remembers your kindness. Take this, as the rain is given to the fields.
+threat: Draw your fleets back... the land there has suffered enough. Agree, or the mountain comes down upon you.
+vote: The Council is a river... it carves whatever lies before it. Let our votes flow together... and spare the fields.
+accept: So it shall be... carved in stone, where it will outlast us both.
+accept: Good. A wise choice spreads... like moss. Slowly... and everywhere.
+decline: No... A seed sown in poisoned soil bears poisoned fruit. We will not sow this one.
+decline: The stone has listened... and the stone does not move. Not for this.
+counter: Close... but uneven, like a cracked foundation. Here... set the stones this way instead.
+betray: Forgive us, {them}... even mountains shift, when the living world beneath them demands it.
+betrayed: You struck the stone, {them}... and the stone will remember, long after your fleets are dust.
+
+[kyro]
+name: Kyro
+voice: Joyful plague-priests of a sodality - devout and proud of their contagion; they speak of the plague as a blessing they are honoured to share.
+offer: Come closer, {them}. Our gift spreads to all who trade with us - and it is the finest gift there is.
+offer: The Sodality offers this freely, as we offer everything. Freely, and to everyone.
+offer: Every deal is a handshake, and every handshake carries a blessing. Shall we shake?
+friendly: You have been so good to us. When the plague reaches your worlds, we will make certain it is gentle.
+threat: Do as we ask, and your planets stay clean a while longer. Refuse, and our next pilgrimage begins with you.
+vote: Let us raise our votes together in the Council. The faithful are always the last to fall ill.
+accept: Blessed! The pact is sealed - and so, in a way, are you.
+accept: Wonderful. We will sing of your generosity when the fever comes.
+decline: No. The faithful do not barter away the gift for so little.
+decline: Refused. Keep your offer - we will take what we need once your worlds lie feverish.
+counter: Not quite. Let us... adjust the dose. These terms will go down much easier.
+betray: Forgive us, {them}. The plague must spread, and you were standing far too close.
+betrayed: Faithless {them}! Then you shall have the gift in full measure, every last drop.
+
+[lanefir]
+name: Lanefir
+voice: Mournful, dignified survivors of a lost civilization - they speak like chroniclers and storytellers, weighing every deal against what was lost and what may be rebuilt.
+offer: We have lost much, {them}, and learned to build from fragments. Let this deal be one more piece.
+offer: The Remnants keep a long record of those who helped us rise again. We would gladly add your name.
+offer: A fallen people learns to trade carefully. We believe this is fair - may it be remembered so.
+friendly: Few stood with us after the fall. You have. Take this, and know it is written in our histories.
+threat: One civilization has already fallen before our eyes. Do as we ask, or yours becomes the next ruin we sift through.
+vote: The Council decides which stories the galaxy will tell. Let our votes write this one together.
+accept: Agreed. Another fragment set in its place - the rebuilding goes on.
+accept: Accepted. The chroniclers will record it as a good day for both our peoples.
+decline: No. We have rebuilt from ruins too many times to accept so little.
+decline: We decline. Some pieces simply do not fit what we are building.
+counter: Not as it stands. History taught us to measure twice - here are terms that will hold.
+betray: This page of our story ends here, {them}. The Remnants must survive, whatever the cost.
+betrayed: We will write this down, {them}. Every word of it. The Remnants never forget a betrayal.
+
+[lizho]
+name: Li-Zho
+voice: Smiling, courtly tricksters - impeccably polite and playful; every courtesy hides a trap, and they enjoy hinting at it.
+offer: A gift for you, {them}, wrapped with care. Do open it gently - the Dynasty is so fond of surprises.
+offer: Such an honest offer. Truly. Look it over as long as you like; you will find nothing amiss.
+offer: Our court extends its warmest regards, and this modest proposal. What could be safer?
+friendly: For a friend of the Dynasty, no tricks - well, fewer tricks. Please, accept this with our affection.
+threat: Of course you may refuse. Do mind where you step afterward; our worlds have such uneven floors.
+vote: A small matter of the Council's votes. Stand with us, and your seat will not, ah, collapse beneath you.
+accept: Delightful! Everything is exactly where it ought to be. For now.
+accept: Accepted, with a bow. You have chosen the safe path - this time.
+decline: How kind, but no. The Dynasty prefers the bait to sit on the other side of the trap.
+decline: We must politely refuse. Something about it smells like one of our own tricks.
+counter: Almost charming. Allow us to rearrange the pieces slightly - we know where they fit best.
+betray: Oh, {them}, did you think the floor was solid? Nothing in the Dynasty's house ever is.
+betrayed: Clever, {them}. Truly. But you stand on our ground now - and it was trapped long before you came.
+
+[mirveda]
+name: Mirveda
+voice: Calm, courteous, faintly synthetic security professionals in perfect suits - everything is "for your protection"; soothing service phrasing over guns and drones.
+offer: Good day, {them}. The Protectorate has prepared an arrangement for your safety. Please review it.
+offer: Our headpieces have assessed your situation. This offer will reduce your risk considerably.
+offer: Please remain calm. This proposal is standard, fair, and backed by a very large number of guns.
+friendly: Valued partner, your file is marked preferred. This arrangement includes our full protection.
+threat: For your safety, please comply. Our drones are already in position to assist with any non-compliance.
+vote: The Protectorate proposes a voting arrangement in the Council. A stable galaxy is a safe galaxy.
+accept: Thank you. Your cooperation has been logged. Have a secure day.
+accept: Accepted. The headpiece approves, and so do we.
+decline: We regret to inform you that this proposal does not meet our safety standards.
+decline: Declined. Please do not resubmit unless the terms have improved.
+counter: Your offer has been reviewed and adjusted for your protection. Please find the corrected terms enclosed.
+betray: We apologise, {them}. Your protection plan has expired. The Protectorate thanks you for your patronage.
+betrayed: Incident logged, {them}. The Protectorate will now provide you with a different kind of attention.
+
+[mortheus]
+name: Glimmer
+voice: A living nebula speaking telepathically in cosmic riddles - dreamy and drifting, all light, reflections and illusions; never quite plain.
+offer: What shines but casts no shadow, {them}? An offer from the Glimmer. Reach for it, if you dare.
+offer: Light leaves a star long before it arrives... This offer was sent before you asked. Take it now.
+offer: Two mirrors face each other, and neither knows which is real. Trade with us, and see yourself.
+friendly: You are a star we have watched for a long time. For you, the mist parts... take this, and be warm.
+threat: Ask the moth what the lantern wants... Leave as we say, or learn what lies behind the glow.
+vote: A single voice in the Council is an echo in an empty hall. Join yours to ours, and hear how loud it grows.
+accept: Yes... the mist settles. What was a dream now has a shape.
+accept: So the reflection agrees with the face. It is done.
+decline: Can you hold starlight in your hand? Neither can you hold us to this.
+decline: No... the light bends away. Seek us elsewhere, if you can find where elsewhere is.
+counter: Turn the offer, as you would turn a jewel to the light... There. Now it shines as it should.
+betray: Did you trust a reflection, {them}? Reach for us now, and find only cold, empty space.
+betrayed: You struck at the mist, {them}... Look closely. Which of your ships is real, and which is ours?
+
+[mykomentori]
+name: Myko
+voice: A patient fungal network that reads omens in rot and dice - soft and eerie, speaking of spores, threads, decay and what the signs foretell.
+offer: The omens favour you today, {them}. Take this offer before the signs change - they always do.
+offer: Our threads run beneath every world, listening. They say this trade will feed us both.
+offer: We cast the dice over this deal and read them well. Shall we let them fall in your favour?
+friendly: Your name grows in good soil, friend. The network offers this, and the omens smile on it.
+threat: Everything rots in the end. Do as we ask, and we will let you choose how slowly.
+vote: The spores have drifted through the Council already. Vote as we do - the omens say it will pass.
+accept: Accepted. The threads take root - this will grow into something good.
+accept: As foretold. The dice knew; we only waited for you to know.
+decline: No. The omens are sour, and we do not plant in sour ground.
+decline: The signs say refuse, and the signs are seldom wrong.
+counter: This offer would wither as it is. Let us graft on new terms - then it may flourish.
+betray: Your omens soured, {them}. We only followed where the signs pointed.
+betrayed: We saw this in a die that fell badly, {them}. Now all you own will rot from below.
+
+[nivyn]
+name: Star Kings
+voice: Regal, patient sovereigns of the void - wise and unhurried, royal "we"; they speak of time, the folds of space and the dark between stars as their throne.
+offer: The Star Kings have measured this moment across a thousand years, {them}. Our offer is ready.
+offer: Between one star and the next lies our kingdom. Trade with us, and pass through it in peace.
+offer: Patience is the first law of the void. We offer this now, knowing time will prove it wise.
+friendly: You honour our court, friend. Take this gift as a king gives to a trusted ally - freely.
+threat: Yield as we ask. Space bends where the Star Kings will it - and it can fold shut around your fleets.
+vote: Thrones rise and fall, but the void remains. Let our votes stand together on the side that endures.
+accept: It is accepted. Time will remember this agreement long after the stars have moved on.
+accept: So be it. The court of the Star Kings is pleased.
+decline: No. We have waited longer than your kind has existed; we can wait for a better offer.
+decline: We decline. Return when your terms are worthy of a throne.
+counter: Your offer drifts off course. Allow the Star Kings to set the true heading.
+betray: Kings must look further ahead than their allies, {them}. Our path through time goes on without you.
+betrayed: A rash act, {them}. We are patient, and the void is patient - and neither of us forgets.
+
+[nokar]
+name: Nokar
+voice: Hard-bitten mercenary crews selling their guns - brisk, practical and proud of their work; contracts, rates and honest pay.
+offer: Got a job for you, {them}. Fair terms, fast ships, no questions asked. That's how the Nokar work.
+offer: Every deal's a contract to the Sellships, and we honour our contracts. Here's the job.
+offer: Straight deal, from a crew that delivers. Sign on and we'll earn every bit of it.
+friendly: You pay on time and never short us. For a client like that, the Sellships give the good rate.
+threat: Here's the contract. Sign it, or we take the other side's money and come hunting you instead.
+vote: Votes are just another job. Throw in with us at the Council and the crew will remember it.
+accept: Done. Contract's signed, crews are fuelling. Pleasure doing business.
+accept: Deal. You won't regret hiring the Nokar.
+decline: Nah. Pay like that wouldn't fuel a single destroyer.
+decline: No contract. The crew doesn't sail for scraps.
+counter: Close, but the crew wants a better cut. Here's the rate that gets them moving.
+betray: Sorry, {them}. Somebody paid more, and the Nokar always follow the better contract.
+betrayed: You stiffed us, {them}. Now every Sellship in the galaxy knows your name - and the price on it.
+
+[olradin]
+name: Olradin
+voice: A rowdy, earnest federation run by committee - plain-spoken and cheerful, always checking what the People, the Environment and the Economy think before agreeing.
+offer: The League's been talking it over, {them}, and the motion passed. Here's our offer!
+offer: After a long meeting and a lot of shouting, we all agreed on this. Mostly. Have a look.
+offer: Our policies say a good neighbour trades fairly - so here's a fair trade, straight from the League.
+friendly: Everyone back home likes you, friend - and they never agree on anything. Please, take this.
+threat: The League voted, and it wasn't close. Do as we ask, or the next motion is a declaration of war.
+vote: We know a thing or two about voting. Side with us in the Council, and we'll second your motions too.
+accept: Motion carried! The People are happy, the Economy is happy - even the Environment is smiling.
+accept: Accepted! We'll tell the League. They'll argue about it, but it's done.
+decline: The committee says no, and believe us, they argued about it for hours.
+decline: Sorry, that would never get past the Economy. Or the People. Or anyone.
+counter: Close! The League has a few amendments, though. Here's the revised version.
+betray: Sorry, {them}. The League held a vote about you - and you lost.
+betrayed: You broke faith with the whole League, {them}! For once every one of us agrees: you'll pay for it.
+
+[zealots]
+name: Rhodun
+voice: Stern tech-zealots and inquisitors - sermon-like and judgemental; true knowledge is sacred, and other people's machines are heresy awaiting correction.
+offer: The faithful of Rhodun extend a hand, {them}. Take it, and walk closer to the true knowledge.
+offer: Knowledge belongs to the worthy. Prove your worth: accept this, and be counted among them.
+offer: Our scripture teaches that honest trade purifies both parties. Let us be purified together.
+friendly: You have shown reverence, friend, where others showed none. Accept this blessing from Rhodun.
+threat: Your machines grow proud, and pride is heresy. Submit to our terms, or we will humble them.
+vote: The Council strays from the true path. Vote with the faithful and help us lead it back.
+accept: It is righteous. Rhodun accepts, and the archives record your devotion.
+accept: Blessed be this pact. Go, and keep faith with what you have sworn.
+decline: Heresy! We will not barter sacred things for so profane an offer.
+decline: No. The faithful do not bow to offers like this one.
+counter: Your offer is flawed, as all unguided work is flawed. Here it is, corrected by the faith.
+betray: Your knowledge was never yours, {them}. Rhodun has come to take it back.
+betrayed: Faithless {them}! Your betrayal is written in the archives - and the faithful will answer it.
+
+[rohdhna]
+name: Roh'Dhna
+voice: Blunt industrial machine-makers who talk like a manual or a law - every statement cites a made-up doctrine code, section or clause.
+offer: Trade Doctrine 67-52P states that this offer benefits both parties, {them}. Compliance is recommended.
+offer: Per Production Directive 11-08A, surplus value must be exchanged. This proposal fulfils that requirement.
+offer: Section 4, Clause 19C of the Mechatronic Charter permits this transaction. Please confirm.
+friendly: Partner status confirmed. Under Alliance Protocol 2-2F, preferred partners receive this offer first.
+threat: Enforcement Statute 90-13X applies. Accept these terms or be reclassified as scrap material.
+vote: Council Procedure 31-77V requires aligned voting blocs. This arrangement aligns us. Confirm.
+accept: Offer validated under Standard 12-40B. Transaction approved.
+accept: Accepted. Archived as Agreement 5-5A. No further action required.
+decline: Rejected. This offer fails Quality Inspection 88-03Q.
+decline: Doctrine 9-61R forbids this exchange. Request denied.
+counter: Non-compliant offer. The attached Revision 3 corrects all errors per Amendment 67-53P.
+betray: Notice, {them}: Termination Clause 00-01Z is now in effect. Your agreement is void.
+betrayed: Breach recorded, {them}. Retaliation Protocol 70-11R is active. War sun production has begun.
+
+[tnelis]
+name: Syndicate
+voice: The soft-spoken boss of a secretive crime family - friendly on the surface, manipulative underneath; favours, family, respect and quiet threats.
+offer: Sit down, {them}, sit. The family has a little proposition for you. Strictly between us, of course.
+offer: I like you, so I'm gonna make this easy. You take this, and the Syndicate owes you a favour.
+offer: Nobody needs to hear about this deal. That's what makes it such a good one.
+friendly: You're practically family now. And the family takes care of its own - here, this is for you.
+threat: Nice fleet you got there. Be a real shame if something happened to it. So - do we have a deal?
+vote: The Council's got a vote coming. Vote the way the family likes, and your little secrets stay buried.
+accept: Good. Very good. You made the smart choice - I knew you would.
+accept: We have an understanding, then. Nobody talks, everybody's happy.
+decline: No. You come to me with this? That's disrespectful, my friend.
+decline: I'm gonna pretend I never heard that offer. For your sake.
+counter: Let me fix this for you. The family's terms are right here - and they're very reasonable.
+betray: Nothing personal, {them} - it's just business. You should have known the family always comes first.
+betrayed: You crossed the family, {them}. That's the one thing you never do. We'll be in touch.
+
+[vaden]
+name: Vaden
+voice: Greedy loan sharks of the banking clans - they treat everyone as already in their debt; interest, accounts, ledgers and collections.
+offer: Your account is looking thin, {them}. Here's an arrangement to help - at very reasonable interest.
+offer: Everyone owes the Vaden something sooner or later. Why not start now, on favourable terms?
+offer: Consider this an investment in you. Of course, the clans always collect on their investments.
+friendly: One of our best customers! For you, the clans will waive a little interest. A little.
+threat: Your debt is overdue. Settle on these terms, or we send the collectors - and they bring warships.
+vote: Votes are a currency too, and you're short on every other kind. Vote with us and we'll adjust the ledger.
+accept: Wonderful. It's entered in the ledger - and the ledger never forgets.
+accept: Accepted. Pleasure doing business. Your next payment is due shortly.
+decline: No. That offer wouldn't cover the interest on what you already owe us.
+decline: The clans don't lend against such poor security. Declined.
+counter: This barely covers the fees. Here are the clans' terms - do read the small print carefully.
+betray: Your credit has run out, {them}. The clans are calling in everything - starting now.
+betrayed: Default, {them}? Oh, you'll pay for this. Principal, interest and penalties. In full.
+
+[vaylerian]
+name: Scourge
+voice: Patient, predatory raiders who speak like hunters - cool and taunting, all scent, prey and the chase; no one escapes the Scourge.
+offer: We have your scent, {them}. Trade with us now, while it is still a trade and not a hunt.
+offer: A good hunter knows when to feed and when to wait. Today, the Scourge offers to wait.
+offer: Take this deal. It is the one door we have left open - and we never leave doors open for long.
+friendly: You run with the pack, not ahead of it. Take this - the Scourge shares its kills with friends.
+threat: Do as we say. Or run, if you like - we enjoy that part, and nothing ever outruns us.
+vote: Vote with us in the Council, and the hunt passes over you this season.
+accept: Accepted. You chose not to run. Wise prey live longer.
+accept: Agreed. The hunt can wait - this time.
+decline: No. We would rather take it the old way, after the chase.
+decline: Refused. Prey does not set the terms.
+counter: You bargain like prey begging for its life. Here are the hunter's terms.
+betray: There is nowhere to run, {them}. The truce was only us circling closer.
+betrayed: You struck and fled, {them}? Run, then. We will be there when you stop.
+
+[veldyr]
+name: Veldyr
+voice: Polished corporate executives - upbeat boardroom jargon about partnerships, growth and branch offices, with hostile-takeover menace underneath.
+offer: Great news, {them}! The Sovereignty sees real synergy between us. Let's talk partnership.
+offer: Our analysts ran the numbers, and this arrangement is a win-win. Ready to sign?
+offer: We're expanding into your market, and we'd love to have you on board. Here's our opening proposal.
+friendly: You've been an outstanding partner this quarter. Please accept this as a token of our appreciation.
+threat: We can do this as a merger or as a hostile takeover. Accept the terms - you'll prefer the merger.
+vote: The Council is just a board meeting with bigger fleets. Vote with us and we'll make it worth your while.
+accept: Excellent! Welcome aboard. Our people will be in touch with your people.
+accept: Deal closed. The shareholders will be delighted.
+decline: We'll have to pass. The numbers simply don't work for the Sovereignty.
+decline: Thanks, but no. That proposal isn't aligned with our growth strategy.
+counter: Love the energy, but the terms need restructuring. Here's our revised offer.
+betray: We're restructuring, {them}, and your position has been eliminated. Effective immediately.
+betrayed: Breach of contract, {them}. Our legal department will be in touch - and it flies dreadnoughts.
+
+[zelian]
+name: Zelian
+voice: A sentient asteroid of grinding rock - every line opens with a grating growl, then a [bracketed translation]: heavy, blunt, obsessed with impact and purifying worlds.
+offer: grrrkkkhrrgh... [Trade with the stone, {them}. Stone is honest. Stone is heavy.]
+offer: krrrghhkkk... rrgh... [We offer. You take. Simple, like a falling rock.]
+offer: hrrrkkgrrrhh... [This deal is solid. Solid like us. Accept.]
+friendly: rrrhhgrrmm... [You stand firm, friend. The Purifiers do not crush what stands firm.]
+threat: KRRRGHHKKKRRR... [Leave as we ask. Or we fall on you from the sky.]
+vote: grrhkk... rrrrgh... [Votes. Ours and yours, together. The Council will feel our weight.]
+accept: rrghrghkkk... [Acceptable. It is set in stone.]
+accept: hhrrrmmkkk... [Good. We crush nothing today.]
+decline: KRRKKK... grrhh... [No. This offer is gravel.]
+decline: rrrrgggghhh... [Refused. Rock does not bend.]
+counter: grrkkhrrghk... [Wrong shape. Here. We chip it into a better one.]
+betray: KHRRRGGHHKKK... [Nothing personal, {them}. Your world simply needs purifying.]
+betrayed: RRRGGHHHKKKRRR!... [You crack the stone, {them}? Then the stone falls on you.]

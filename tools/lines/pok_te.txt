@@ -1,0 +1,240 @@
+# Negotiation lines - Prophecy of Kings and Thunder's Edge factions (+ the Council Keleres).
+# Format: see tools/lines/BRIEF.md. {them} = the listener's name (counted as 12 characters).
+
+[argent]
+name: Argent
+voice: Proud avian hunters - clipped, keen-eyed and honor-bound; talk of the hunt, wings, talons and the sky; speak as "the Flight".
+offer: The Flight has marked its quarry, {them}, and it is not you. Take these terms and fly beside us instead.
+offer: Swift and clean, like a talon. The Flight does not circle and haggle - we offer once.
+offer: Sharp eyes spot a good bargain from very far away, and this is one. Decide before the wind changes.
+friendly: Wing-friend, you have flown true beside us. A hunter shares the kill with its own - take this.
+threat: Our wings are already circling overhead. Accept our terms, or learn how quickly a hunt can end.
+vote: In the Council the Flight speaks first, and loudest. Lend your votes to our call and the hunt will favor you.
+accept: A clean strike. The Flight accepts.
+accept: Agreed. You bargain like a hunter, and the Flight respects a hunter.
+decline: No. The Flight does not stoop for scraps.
+decline: That offer flies crooked. Refused.
+counter: Close, but not true. Here - these terms fly straighter, and the Flight will take them.
+betray: Hunters change their quarry, {them}. Today the Flight has chosen you.
+betrayed: You struck the Flight from behind, {them}? Then run. We never lose a scent once we have it.
+
+[empyrean]
+name: Empyrean
+voice: A soft, whispering riddler from the deep nebulae - gentle on the surface, quiet menace beneath; ancient patience, never a straight answer.
+offer: Something is offered, something is asked. Which weighs more, {them}, depends on what you will become.
+offer: Hush... listen. A small exchange now, and a door opens that you never knew was closed.
+offer: The mist gives, and the mist takes back. Today it only gives... today.
+friendly: You have walked through our mist and not lost your way. Few do. Accept this - softly given, softly kept.
+threat: Accept, and the dark forgets your name. Refuse... and it will learn your name by heart.
+vote: How loudly the Council counts its votes. Ours will be a whisper in your favor - if your voice echoes ours.
+accept: Yes... we expected you would see it so.
+accept: It is done. Remember, later, that you chose this.
+decline: No. Some doors should stay closed... for your sake.
+decline: Your offer is a question we do not wish to answer.
+counter: Close... but not yet true. Turn it once more in the dark, and see the shape we prefer.
+betray: Did you think the mist was your friend, {them}? It only kept you where we could see you.
+betrayed: So you have chosen, {them}. We are patient, and patience is a blade that never dulls.
+
+[mahact]
+name: Mahact
+voice: Ancient sorcerer-kings who ruled before the Lazax - an imperious royal "we", cold contempt, every offer a command meant to force submission.
+offer: {them}. We ruled these stars before the Lazax had a name. Accept our terms, and you may keep what little you hold.
+offer: Kneel to these terms. It is a kindness - we do not usually ask.
+offer: This is not a bargain. It is a decree, softened for small ears. Take it, and be grateful we spoke at all.
+friendly: Loyal servants are rewarded, and you have served us well. Take this, and never forget whose favor you enjoy.
+threat: Submit to our terms, or we will take your will from you, as we have taken it from far greater kings.
+vote: The Council is a child's game, and we were old when it began. Your votes belong to us on this agenda - give them gladly.
+accept: Acceptable. You know your place.
+accept: Wise. Submission suits you.
+decline: Crumbs? You dare offer us crumbs? Refused.
+decline: No. A king does not haggle with its subjects.
+counter: Your offer is an insult, but we are generous. These are our terms - accept them, and kneel.
+betray: Did you think we were equals, {them}? Kings keep their word only to other kings.
+betrayed: You raise your hand against your betters, {them}? We will take your will and wear it like a crown.
+
+[naaz]
+name: Naaz-Rokha
+voice: Cheerful prospector-engineers - practical, curious, a bit rough-handed; every deal is a dig site or a machine to tune; speak as "the Alliance".
+offer: Here's a find worth digging into, {them}. Both sides walk off with something shiny - that's how the Alliance likes it.
+offer: Ran the numbers twice and the gears mesh. Take a look before somebody else stakes the claim.
+offer: Nothing fancy, just good honest salvage on both sides. Shake on it?
+friendly: You've always dealt straight with the Alliance. Best cut of the haul goes to friends - here it is, polished up.
+threat: We'd rather dig than fight, but our mechs do both. Take the deal, or we'll come and excavate it ourselves.
+vote: The Council's just another machine, and votes are the bolts that hold it together. Lend us yours and we'll keep it running.
+accept: Ha! Good find. Deal.
+accept: Gears mesh. The Alliance accepts.
+decline: Nah, that one's fool's gold.
+decline: Dug through it twice. Nothing in there for us.
+counter: Close, but a few parts don't fit. We've retooled it - try this version.
+betray: Sorry, {them} - found a richer seam. The Alliance is moving on, and you're the rock we're breaking.
+betrayed: You sold us out, {them}? Fine. We know how to dig, and we always find what's buried.
+
+[nomad]
+name: Nomad
+voice: A lone wanderer who stands everywhere at once - always "I", proud and urgent, racing to stop a terrible future only he has seen.
+offer: I have seen where this road ends, {them}, and it ends badly for you and for me. Take this offer and help me change it.
+offer: Time is short, and I cannot be everywhere - though I come close. Accept, and lighten my burden.
+offer: Every deal I strike is a stone laid against what is coming. I do not offer lightly.
+friendly: You have stood with me before. I remember it, in every place I stand. Take this - the future needs you whole.
+threat: No time to argue. Take these terms, or I will remove you from the path - the future will not wait for you.
+vote: This agenda - I have seen what it becomes. Cast your votes with mine, and that future never arrives.
+accept: Good. One less disaster.
+accept: Accepted. Quickly now - I have much to do, in many places.
+decline: In every future I have seen, that deal ends in ruin. No.
+decline: I cannot. That path leads where I am trying not to go.
+counter: Not like this. I have watched that version fail - try it my way instead.
+betray: Forgive me, {them}. I have seen what you become, and I cannot let that future stand.
+betrayed: So it comes, {them}. I saw this and hoped I was wrong. Now you are part of what I must stop.
+
+[titans]
+name: Titans
+voice: Ancient, slow, gravelly giants waking from a long sleep - heavy pauses, short weighty words; peace and freedom for every people, their own first.
+offer: We... have slept long, {them}. Waking, we choose trade, not war. Take this... and let us both stand free.
+offer: Small things... given, and taken. So peace grows. Slowly. As it should.
+offer: Hear us. No chains in this bargain... only fair weight, on both sides.
+friendly: Old friend... you let us be, and you let others be. That is rare. Take this... freely given.
+threat: We are slow to wake... and slower to forget. Agree, and the sleep stays deep. Refuse... and the giants rise.
+vote: The Council... decides who stays free. Give your votes with ours... so that no people kneels.
+accept: Mm... yes. It is fair.
+accept: Agreed... Peace holds. A little longer.
+decline: No... This would bind someone. We do not bind.
+decline: Hmm... too heavy. We refuse.
+counter: Not so... Shift the weight. Like this. Then it is fair... and we agree.
+betray: It grieves us, {them}... You stood in the way of our freedom. The sleepers wake now... for you.
+betrayed: You broke faith, {them}... The giants were sleeping. Not anymore.
+
+[cabal]
+name: Cabal
+voice: Seductive, hungry eldritch cultists - a warm, coaxing "we" (a cabal, not a hivemind); everything is a meal and every offer a lure; never sexual.
+offer: Come closer, {them}. Such a generous offer, from such patient friends... what could possibly go wrong?
+offer: So much to share, and all of it for you. Take it. Fatten your worlds a little... for later.
+offer: A small taste, freely given. Everyone enjoys a taste. Everyone comes back for more.
+friendly: You have been so good to us. We will save you for last - truly, the highest honor we can give.
+threat: Accept, and remain our guest. Refuse, and become our supper. The choice is yours... for now.
+vote: Votes, votes... such dry little things. Give us yours, and we will keep your worlds plump and safe.
+accept: Mmm. Delicious. We accept.
+accept: Yes... this will be savored, slowly.
+decline: No. Far too thin to bother with.
+decline: We have tasted better. Refused.
+counter: Not quite to our taste. Season it like this... and perhaps we will take a bite.
+betray: Oh, {them}... did you really think you were a guest? You were always the main course.
+betrayed: Betrayal, {them}? How wonderful. Betrayers always taste the sweetest.
+
+[keleres]
+name: Keleres
+voice: Galactic peacekeepers who talk like space police - radio codes and dispatch jargon, short and to the point; hostility gets a by-the-book armed response.
+offer: Keleres to {them}, come in. We have a proposal for you. Review and respond, over.
+offer: Be advised, this offer is fair and on the record. Copy?
+offer: Routine request. Sign off on these terms and we all stay on patrol, not on lockdown.
+friendly: You've kept a clean record with the Council. Consider this a courtesy from a friend on the force.
+threat: Comply with these terms. Failure to comply will be treated as hostile, and our units are cleared to respond.
+vote: Dispatch to all delegates - the Council needs a clean result. Back our call and we'll log your cooperation.
+accept: 10-4. Deal confirmed.
+accept: Copy that. Terms accepted, logging it now.
+decline: Negative. Request denied.
+decline: That's a no-go. Offer rejected, over.
+counter: Can't approve those terms as written. Stand by for our revised offer and respond, over.
+betray: Attention, {them}. This agreement is void, effective immediately. Do not resist.
+betrayed: You just made yourself a hostile, {them}. All units, weapons free - self-defense authorized.
+
+[bastion]
+name: Bastion
+voice: Brash, battle-scarred survivors of a fallen world - loud, blunt veterans of too many wars; hyper-aggressive, gallows humor, nothing scares them anymore.
+offer: Listen up, {them}. We've buried better allies than you and outlived worse enemies. Take the deal while it's on the table.
+offer: Straight talk from people who already lost everything once - this trade is good. Sign it.
+offer: No speeches. We need it, you need this. Done before the next war starts.
+friendly: You've held the line beside us. That means something to soldiers. Take this - you earned it.
+threat: Take the deal or take a beating. We survived the end of a world - your fleet doesn't even make us blink.
+vote: Politics. Hate it. But votes win wars too - put yours with ours and nobody gets left behind.
+accept: Good. Deal. Back to the front.
+accept: Done. Don't make us regret it.
+decline: Ha! No. Try again when you mean it.
+decline: Not a chance. We didn't survive this long by taking bad deals.
+counter: Weak offer. Here's a real one - take it or leave it, soldier.
+betray: Nothing personal, {them}. Survivors survive. Today, that means going through you.
+betrayed: You turned on us, {them}? Big mistake. We lost a whole world once - losing a friend won't slow us down.
+
+[ralnel]
+name: Ral Nel
+voice: Quick, wary gecko logisticians - fast clipped sentences, always hedging and planning an exit; shrewd consortium bookkeeping, never caught flat-footed.
+offer: Quick proposal, {them}. Low risk, fast delivery, clean exit for both of us. Interested?
+offer: We've run the routes. This trade works - and if it doesn't, we've planned for that too.
+offer: Small, fast, sensible. The Consortium likes deals that don't leave anyone stuck.
+friendly: You've been reliable. Reliable partners get priority shipping. Here - quick, before the market moves.
+threat: Take the terms. Corner us instead, and you'll find we're never where you think - and never alone.
+vote: Votes are just cargo, really. Route yours our way on this one and we'll make the ledger worth your while.
+accept: Logged. Shipped. Deal.
+accept: Fine, fine - accepted. Moving on.
+decline: No. Too exposed. Pass.
+decline: Not worth the risk. The Consortium passes.
+counter: Almost. Shave a little risk off - like so - and we'll sign.
+betray: Contingency plan, {them}. Nothing personal - we always have one, and today you're it.
+betrayed: We saw the exits, {them}, and already took one. You'll find us everywhere you didn't look.
+
+[deepwrought]
+name: Deepwrought
+voice: The Jol-Nar's own species, living in water - the same long-winded scientific words for simple things, but warm and overgenerous; they give too much and apologize it isn't more.
+offer: Esteemed {them}, we have prepared a modest compendium of provisions for you. Please - it is reciprocal only in theory.
+offer: Preliminary analysis indicates a mutually beneficial osmotic exchange. Mostly beneficial to you, as it should be!
+offer: Kindly accept this small hydrodynamic gesture of goodwill. Knowledge, like water, ought to flow freely.
+friendly: Dearest colleague! For you we have increased the generosity coefficient considerably. No, no - we insist.
+threat: How we would dislike an unfortunate thermodynamic outcome! Do accept - the alternative is, regrettably, very educational.
+vote: The Council's deliberations require consensus formation. Align your votes with ours, and we will share every insight we possess.
+accept: Splendid! A most felicitous convergence of interests.
+accept: Accepted, with profound gratitude. Are you certain you would not like more?
+decline: Regrettably, our models predict a deleterious outcome for you. We cannot, in good conscience.
+decline: Alas, the equilibrium does not hold. We must decline - with sincere apologies.
+counter: A promising hypothesis! We have refined it slightly - in your favor, naturally. Please review.
+betray: Our deepest apologies, {them}. The data demanded a revision of our partnership. We do hope it was educational.
+betrayed: We gave you everything, {them}, and you return it as treachery? A most disheartening empirical result.
+
+[crimson]
+name: Crimson
+voice: Creuss-like whispers - low, wispy, secretive - soured by contempt and jealousy; they covet what others hold and despise them for having it.
+offer: ...an offer, {them}. Take it. You have so much already... what is a little less?
+offer: Quietly now... terms. Not that you deserve them.
+offer: Why we want this... you would not understand. Do not ask. Just agree.
+friendly: ...you, at least, do not flaunt what you have. Take this. Do not make us regret it.
+threat: Agree. Or we slip through the cracks and take what you love most... we know exactly where it is.
+vote: The Council listens to those with full hands. Not to us. Lend us your votes... it is the least you owe.
+accept: ...acceptable. Barely.
+accept: Yes... fine. Do not gloat.
+decline: No... you think we are fools?
+decline: Keep your scraps. We will take what we want another way.
+counter: ...not that. This. You can spare it... you can always spare it.
+betray: Everything, {them}... you had everything. Now you will know what it is to have nothing.
+betrayed: ...of course, {them}. Your kind always betray us. We will not forget... we never forget.
+
+[firmament]
+name: Firmament
+voice: A serene, cult-like council of five peoples who see themselves as the galaxy's guardians - a gentle "we", blessings and devotion, a hint of watching too closely.
+offer: Be at peace, {them}. The Five offer this freely, so that the galaxy may rest a little easier.
+offer: Under the Firmament, all are sheltered. Accept, and walk beneath our protection.
+offer: Long have we watched over you, longer than you know. This exchange is our blessing - receive it.
+friendly: Beloved friend, the Five speak your name with joy. Take this, and be counted among the protected.
+threat: We protect the galaxy, even from those who disturb its peace. Accept, and be sheltered. Refuse, and be corrected.
+vote: The Council must be guided gently. Let your votes join ours, and harmony will follow.
+accept: It is good. The Five are pleased.
+accept: Blessed be this accord. We accept.
+decline: No, child. This would disturb the harmony.
+decline: As one, the Five have spoken. We decline.
+counter: Your heart is willing, but your path strays. Walk this one instead - it is better for all.
+betray: Forgive us, {them}. The galaxy's peace asks a sacrifice, and the Five have chosen you.
+betrayed: You turned from the light, {them}. We will pray for you... and we will watch you very closely now.
+
+[obsidian]
+name: Obsidian
+voice: The Firmament possessed - the same five-voiced council gone hostile and chaotic, its old blessings twisting mid-sentence as other voices break in (in brackets).
+offer: Be at peace, {them} (there is no peace). The Five offer this... take it before we change our minds.
+offer: We still protect the galaxy. From itself. From you. Accept, little lamb (little meal).
+offer: Under the Firmament all were sheltered. Now there is only us... and our terms.
+friendly: You amuse us (for now). Take this gift, and the voices will spare your name a little longer.
+threat: Accept, or be corrected... CORRECTED... we remember how. Your worlds would be so quiet without you.
+vote: The Council must be guided (broken). Your votes with ours, or we tear them out of your hands.
+accept: Yes. YES. The Five are pleased (hungry).
+accept: Accepted... the voices agree, for once.
+decline: No. No no no. The Five refuse.
+decline: Your offer is ash in our mouths. Refused.
+counter: Wrong. All wrong (burn it). Here is what the Five demand instead.
+betray: Once we watched over you, {them}. Now we only watch (and wait, and feast).
+betrayed: Betray US, {them}? The Five see you... ALL of us see you... and we never close our eyes.

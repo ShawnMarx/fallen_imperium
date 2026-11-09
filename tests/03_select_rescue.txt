@@ -1,0 +1,5 @@
+# Holding SELECT for 3 s must leave the main loop cleanly (in a real run the
+# screen method is swapped; headless just stops).
+wait 5
+hold SELECT 200
+wait 210

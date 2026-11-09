@@ -1,0 +1,25 @@
+# The seeded galaxy (0.43.0): New Game -> Galaxy -> Seeded, the slices window, then the game's map.
+wait 5
+press A
+wait 5
+press UP
+wait 2
+press UP
+wait 2
+press RIGHT
+wait 2
+shot newgame_seeded
+press Y
+wait 3
+shot seeded_slices
+press RIGHT
+wait 3
+shot seeded_slices_next
+press LEFT
+wait 2
+press B
+wait 2
+press START
+wait 60
+shot seeded_game
+quit

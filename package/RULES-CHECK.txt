@@ -1,0 +1,1668 @@
+RULES-CHECK - version 0.57.1
+============================
+
+NEW (0.57.1 - your tester's reports)
+ X1.  Peace Accords (and the Ghemina's Kantrus) no longer take space
+      stations: the Thunder's Edge rulebook says a station is gained by
+      being the only player with ships in its system. OK?
+ X2.  Thunder's Edge's Xxekir Grom (Xxcha hero, replaces the Codex one
+      when Thunder's Edge is on): PDS and mechs only on planets you control
+      that aren't space stations or the Demilitarized Zone, at most 2 PDS
+      on a planet (the usual limit); a planet
+      is readied as soon as a unit goes on it (the same as readying them
+      all at the end). OK?
+ X3.  The map now shows a flag on every controlled planet; at the closest
+      zoom a planet held with no units there still shows the control token
+      too (you asked for those in 0.12.1). Keep both, or only the flag?
+
+NEW (0.57.0 - the comms codec and the negotiation lines; nothing in the
+rules changed - these are about the lines and how they show)
+ L1.  Voices I invented where your gist said "unsure" (each faction's
+      voice is written above its lines in tools/lines in the source, and
+      shown in the review list I send with this build): Argent (proud
+      avian hunters, "the Flight"), Xxcha (patient courteous elders),
+      Naaz-Rokha (cheerful prospector-engineers), Ral Nel (quick, wary
+      gecko logisticians who always have an exit), Kollecc (genteel
+      secretive collectors), Kortali (stern judges of the Queen's
+      Tribunal), Li-Zho (smiling courtly tricksters), Mirveda (calm
+      security professionals - "for your protection"), Myko-Mentori
+      (fungal omen-readers), Olradin (a rowdy committee that votes on
+      everything), Zealots of Rhodun (tech-zealot inquisitors), Vaylerian
+      (predatory hunters), Veldyr (corporate executives), Bentor (company
+      treasure-hunters), Cheiran (a slow crustacean horde, "klk-klk"),
+      Ghoti (a calm shoal of void-swimmers), Lanefir (mournful chroniclers
+      of a lost people). Change any you like - just tell me the voice.
+ L2.  Lines one faction says only to another are used 2 times in 3, the
+      faction's usual lines otherwise. More pairs you want (rivals,
+      allies, old grudges)? List them and I'll write them.
+ L3.  The Obsidian speak only in the Lazaxian alphabet, so their words
+      can't be read (the deal underneath always can). OK, or should a
+      small translation appear under it?
+ L4.  A promise broken to you or by you now opens the betrayal codec and
+      waits for A (like the bots' betrayals). Bot-to-bot broken promises
+      only get the deal banner. OK?
+ L5.  Who speaks on a deal banner: the one offering, the one who says yes
+      or no, the one countering, the one breaking a promise. People's
+      factions never speak for them, except in the betrayal exchange
+      (your faction answers the betrayer). OK?
+
+Your 0.56.0 answers: W1, W2 OK. W3: you asked whether bots planning routes
+is worth it - answered in the chat (little value; not built unless you
+want it).
+
+ANSWERED (your 0.56.0 feedback) - 0.56.0 (Waypoint Mode - your M2 follow-up)
+ W1.  A chosen route rolls for every gravity rift the ships LEAVE on it
+      (the system they start in too, if it is a rift), and each rift
+      left gives +1 move - as the automatic routes always did (LRR 41).
+      Ships may pass through systems with your own command tokens, but
+      nothing can be picked up there (units there can't move). OK?
+ W2.  One route per starting system: all the ships leaving that system
+      follow it (a carrier and its escort travel together). Ships from
+      another system can have their own route. A route never visits the
+      same system twice. OK?
+ W3.  The computer players keep the automatic routes (rift-free when
+      they can). Do you want them to plan routes too - e.g. a detour
+      through a rift to pick up troops when the odds are good? (Not
+      built; it would be a small bot change later.)
+
+Your 0.55.0 answers: N1, N2, M1, M2 OK; M3 you'll pass on to the tester.
+M2 follow-up: you asked for waypoints - built in 0.56.0 (Waypoint Mode,
+W1-W3 above).
+
+ANSWERED OK (your 0.55.0 feedback) - 0.55.0 (found by the big computer-game test run)
+ N1.  The Vuil'raith's Devour vs the Crimson Rebellion's Subatomic
+      Splicer: a Crimson ship destroyed in a combat against the
+      Vuil'raith is captured first (it goes to the Vuil'raith, not back
+      to the reinforcements), and THEN the Splicer may rebuild one like it
+      at home - only if a ship of that type is left in the Crimson's
+      reinforcements. Before, the Splicer came first and the captured
+      carrier existed twice (one game had 5 Crimson carriers of 4). Also,
+      anything can only be captured if it really went back to its
+      owner's reinforcements (unit limits). OK?
+ N2.  Ships waiting on the Homesick Phantom card (the Crimson hero) are
+      still the Crimson's units: they count toward the unit limits, so
+      the Crimson can't produce more of that ship while they wait. OK?
+ (Both only in games started with 0.55.0; older saves play on as before.)
+
+Your 0.53.0 answers: L1-L5 all OK - thanks, nothing changed there.
+
+ANSWERED OK (your 0.55.0 feedback) - 0.54.0 (the tester's reports)
+ M1.  Retreats (LRR 78.7 + the FAQ: "while retreating, a player may
+      transport zero or more ground forces from planets they control in
+      the active system"): the retreating player is asked, planet by
+      planet, how many infantry / mechs go along - up to the room on the
+      retreating ships. If they take ground forces from planets, what the
+      ships carried in space that no longer fits stays behind (removed).
+      Also for Skilled Retreat and the other "move away like a retreat"
+      effects. OK?
+ M2.  Picking up units on the way (LRR 95.1): a ship may detour through a
+      gravity rift it doesn't roll for (the Vuil'raith's own Dimensional
+      Tears) to pick up units there, with the rift's +1 move. A detour
+      through a rift that DOES roll is still not offered (the move would
+      need a roll the game doesn't make on a detour). OK?
+ M3.  Dimensional Tear production: fixed 5 (7 with Dimensional Tear II),
+      not the planet's resources + something. The game did this already -
+      if your tester saw another number, a screenshot of where would help.
+
+0.53.0 changed only how the computer players plan - nothing to answer.
+
+ANSWERED OK (your 0.53.0 feedback) - 0.52.1 (the Celagrom as its own unit)
+ L4.  The Celagrom's hit at the start of a space combat: the Celdauri pick
+      which kind of the opponent's ships takes it; the opponent may still
+      use Sustain Damage on it (as with any hit). It doesn't fire in an
+      entropic scar. OK?
+ L5.  "While you control another flagship": the Celagrom rolls 1 more die
+      while the Supremacy is anywhere on the board. OK?
+
+ANSWERED OK (your 0.53.0 feedback) - 0.52.0 (your D117: the Lady and the Lord as two units)
+ L1.  The Lady is a unit of her own (cost 6, combat 7 x2, move 2, capacity 3,
+      Sustain Damage, Bombardment 5 x4) and the Lord is the Ghemina's
+      flagship (capacity 7). One of each. Everything that looks for "a
+      flagship" counts either of them: Unveil Flagship, Destroy Their
+      Greatest Ship, Engineer a Marvel / Achieve Supremacy, the heroes'
+      "next to one of your flagships", the commander's unlock (both on the
+      board). OK?
+ L2.  Rapid Mobilization (galactic event) places one flagship: the Lord if
+      he is in your reinforcements, otherwise the Lady. Weird Wormholes
+      changes the Lady like any flagship (1-5 a carrier, 6-10 a war sun).
+      OK?
+ L3.  Korela / Kantrus (Ghemina heroes) are offered only when there is a
+      planet they can act on. OK?
+0.51.1 changed only the pictures (painted Voidfall troops, 10 spread soldiers per
+infantry in Voidfall). 0.50.0 (pixel-art faction troops),
+0.49.0 (pixel-art battles), 0.48.0 (sharper Retrowave), 0.47.0 (the SCREENS panel) and
+0.46.2 were screens only too.
+
+Your answers to the 0.44.9 questions (Q1-Q8), as now played:
+ Q1.  Done: an extra action (Fleet Logistics, the Thunder's Edge planet,
+      Master Plan, Minister of War) offers "Pass (as the extra action) - you
+      are done for the round" next to "End turn - skip it, you stay in the
+      round". (Not for an action someone else gives you out of turn.)
+ Q2.  Kept, and said plainly: the Proxima Targeting VI question and its dice
+      say they are the technology's own dice - no X-89 doubling, no Plasma
+      Scoring die.
+ Q3.  Kept at 20 rounds.  Q4-Q8: kept as they were.
+
+0.46.1 also changed (your bug report - the Roh'Dhna war sun):
+ F1.  The fleet pool and capacity are checked at all times (LRR 37.3 and
+      16.3): before every question the game looks for a system with more
+      ships than the fleet pool allows, or more fighters / ground forces
+      than the ships there can carry, and the owner removes the extra -
+      their choice. It waits while ships move, during an invasion's landing
+      (G'hom Sek'kus, Revenant, Combat Drones bring ground forces in to land)
+      and in a space combat (LRR 16.3c - at its end). The test games found
+      these cases that weren't checked before: Industrious (Roh'Dhna war
+      sun), Malevolency and Sanction (a fleet token lost), Rapid
+      Mobilization (the flagship placed at home), The Nucleus (Muaat),
+      Walik and Two by Two (Mortheus), Survival Instinct (Ral Nel),
+      Subatomic Splicer (Crimson), Khaz-Rin Li-Zho's fighters, Hired Guns,
+      and space docks destroyed by cards and agendas (Reactor Meltdown,
+      Colonial Redistribution, Heart of Rebellion...) leaving fighters
+      without room. Nothing to answer unless you see something wrong.
+
+0.45.0 (your 0.44.9 bug list) changed these - each is how the game plays now:
+ X1.  Capacity (LRR 16.3c): during a combat, fighters and ground forces don't
+      count against capacity; excess goes at the end of the combat. Outside a
+      combat it is removed at once (a move, Avernus leaving with its dock).
+ X2.  Producing beyond the fleet pool is allowed (LRR 37.3 only says excess
+      ships are removed): you choose which ships go afterwards.
+ X3.  Awaken wakes only sleeper tokens that were in the system when it was
+      activated (Scanlink can explore a planet and Terragenesis place a
+      sleeper right after the activation - that one waits).
+ X4.  The Thunder's Edge planet gives no relic when gained (relic icons are on
+      the Fracture's planets).
+ Nothing new to answer.
+
+0.44.9 put in your answers to the four technology lists (W, P, G, C) and the
+older B and R lists. Rule changes apply to games started in 0.44.9 (older saves
+keep playing as before). What I did with each answer, then a few new questions.
+
+YOUR 0.44.8 ANSWERS - WHAT I DID
+ W1, W6, W7, W9-W13. As you said - no change.
+ W2.  The Living Rules FAQ version: The Alastor (Nekro flagship) and the Z-Grav
+      flip are chosen BEFORE Assault Cannon, so ground forces fighting through
+      The Alastor and Z-Grav / Eidolon Maximum mechs count toward the 3 ships,
+      and may be picked as the ship Assault Cannon destroys.
+ W3.  The start of a space combat now follows LRR 1.19: the active player
+      resolves their Assault Cannon / Dimensional Splicer first, then the other
+      player. A Creuss with both is asked which goes first.
+ W4.  Proxima Targeting VI "resolves BOMBARDMENT", so it is treated as a
+      bombardment for what stops one: it can't be used against a planet with the
+      opponent's Planetary Shield (unless your war sun is there, or the shield is
+      down) or against a cultural planet under Conventions of War. The Bastion's
+      mechs may sustain against the backlash (as now).
+ W5.  You choose the planet that gets the extra bombardment die (Plasma Scoring
+      and the like) when more than one is bombarded.
+ W8.  Duranium Armor asks which unit to repair when more than one kind is
+      damaged.
+ W14. Yes, both changed: (1) a unit upgrade one prerequisite short asks whether
+      to use AI Development Algorithm before a Discordant Stars waiver that
+      would be used up (bots always do); (2) a space combat where nobody can
+      win (20 rounds in a row without a single unit lost - Duranium Armor with
+      Non-Euclidean Shielding) ends as the FAQ says: the attacker retreats if
+      it can, or is destroyed.
+ P1.  Games without the Codex or Thunder's Edge play the original Wormhole
+      Generator: at the start of the status phase you may place or move a
+      Creuss wormhole token (no action, no exhausting). The card text follows.
+ P2.  A Creuss token may go into an inactive Wormhole Nexus (not the Creuss
+      home); when the nexus becomes active the token goes back to the Creuss.
+ P3, P5, P7. As you said.
+ P4.  The difference: "End turn" stops after your first action - you are still
+      in the round and get more turns later. "Pass" means you are done for the
+      round (no more turns; you can't pass before using your strategy card).
+      Living Rules 3.1 names three kinds of action - strategic, tactical and
+      component - and passing isn't one of them (3.2: you pass when you can't
+      or won't act), so an extra action from Fleet Logistics, Jupiter Brain,
+      Master Plan or Minister of War offers "End turn" but not "Pass". Not
+      changed - see Q1 below.
+ P6.  Movement boosts now stack on one ship unless a card says otherwise:
+      Gravity Drive + Ionian Fuel Refinery + Lightning Drives (and the like)
+      can give one ship +2 or more. The move screen shows "+2 move" etc.
+ P8.  A carrier that needs the +1 for a detour to pick up units now uses up a
+      boost. Shrouded Skirmishers: my judgement is to keep it as it is - only
+      ships of the active player can have arrived in the active system during
+      the action, so it works for the active player.
+ G1.  Radical Advancement may swap faction technologies too, and may replace
+      itself (e.g. for a biotic technology with two prerequisites). A faction
+      technology taken has to be one the player could research (their own).
+ G2-G5. As you said. G6: done in 0.44.7 (Pilgrimage Beacons triggers on every
+      specialty planet you exhaust on your turn).
+ C1-C3, C6, C8, C10. As you said.
+ C4.  Parallel Production may use the system that just produced as one of its
+      two systems.
+ C5.  The Roh'Dhna may pick themselves for Contractual Obligations. When a
+      person is picked by someone else, they see a notice they confirm before
+      producing.
+ C7.  The feed (and the choice) now say that the space dock produces by the
+      planet's new resource value.
+ C9.  Transit Diodes moves the Titans' Hel-Titans too.
+ C11. Inheritance Systems is now offered whenever you research a technology
+      with prerequisites still to cover (you're asked whether to use it), and
+      with Reveal Prototype (4 + 2 resources). Recursive Worm can now pick a
+      player with no tokens in reinforcements - they give one from a pool
+      (LRR 20.3b), as with Local Contracts.
+ B1.  Professional Intrigue and Insurrectionist Networking may send their
+      infantry onto an enemy planet with nobody on it - the planet is simply
+      taken.
+ B2.  Stabilization Arrays: each Eye of the Curator fighter takes half a slot
+      of capacity (carried, or kept in a space area); in the fleet pool they
+      count as normal fighters.
+ B3.  Bannerhalls give 1 vote each, like planet cards, and ready with the
+      planets at the end of the agenda phase.
+ B4.  Checked: nothing else gives the Dih-Mohn a production in the middle of a
+      space combat, and the choice is offered to the player each time the
+      trigger happens. The "produce beside other players' ships" part also
+      works as a standing rule for their normal productions. No change.
+ B5.  No change needed: the game treats both flagships as the same piece, so
+      after one is destroyed the Celdauri may build a flagship again - which
+      stands for the Celagrom too.
+ B6-B8. As you said.
+ B9.  All added: the Titans with Slumberstate Computing may ask another player
+      (from the action menu, without using the action) to let them place a
+      sleeper token on one of that player's planets - the owner confirms;
+      the Yssaril with Deepgloom Executable may let another player use
+      Scheming when they draw action cards (the drawer asks, the Yssaril
+      confirm, then a trade outside the usual limit); each Omni-Forgeworld is
+      also a space station (+1 commodity, station trades; using it to convert
+      commodities damages it instead of exhausting a card); and a Nekro with
+      Valefar Assimilator Z now gets Hil Colish (the delta wormhole), The
+      Terror Between, The Inferno, the Artemiris and Dynamo.
+ R1.  As you play it - no change.
+
+0.44.9 asked these (answered in 0.46.1, above):
+ Q1.  Fleet Logistics (and the other extra actions): should "Pass" be offered
+      as the second action anyway? (See P4 - by Living Rules 3.1 it isn't an
+      action.)
+ Q2.  Proxima Targeting VI isn't a unit's roll, so X-89 Bacterial Weapon
+      doesn't double its hits and Plasma Scoring adds no die. OK?
+ Q3.  The stalemate rule waits 20 rounds without a unit lost on either side.
+      OK, or would you rather it ended sooner (e.g. 10 rounds)?
+ Q4.  Deepgloom Executable's Scheming: the drawer asks the Yssaril each time
+      they draw (people can say "not again this round"; a bot asks at most once
+      a round). The trade afterwards only happens on one of their two turns,
+      not in the middle of a combat. OK?
+ Q5.  Slumberstate Computing: only non-home planets, each player asked at most
+      once per turn; the bots say yes only to a Titans player they're friendly
+      with (Awaken could later put a Titans PDS on their planet). OK?
+ Q6.  Omni-Forgeworld: only an undamaged one can be "exhausted" for the
+      commodity conversion (it is damaged by it). OK?
+ Q7.  Transit Diodes and Hel-Titans: the limit of 2 PDS on a planet still
+      applies (a Hel-Titan can't join 2 others). OK?
+ Q8.  Contractual Obligations on yourself: you produce the ship and pay for it
+      as usual. OK?
+
+ANSWERED IN 0.44.9 (the lists below, for reference)
+
+0.44.8 (the warfare technology check - the last colour) asked these:
+ W1.  Avernus (Muaat breakthrough planet): The Nucleus is the planet's own
+      ability, so whoever controls Avernus may use it (with their own war sun
+      on the board) - before 0.44.8 only the Muaat with their breakthrough
+      could. Ember Colossus (Muaat mech) now also answers to it: every Muaat
+      mech on a planet in or next to that system places its infantry (a mech
+      in space only when there is capacity for the infantry). OK?
+ W2.  Assault Cannon resolves before The Alastor (Nekro flagship) and Z-Grav
+      Eidolon are chosen, so those ground forces / mechs don't count toward
+      the 3 ships and can't be picked as the loss. The Living Rules FAQ says
+      the Alastor's infantry count. Change it?
+ W3.  Dimensional Splicer (Creuss) always resolves after both players'
+      Assault Cannons. An active Creuss could choose to resolve it first
+      (LRR 1.19). Ask the Creuss which goes first?
+ W4.  Proxima Targeting VI (Last Bastion): its roll isn't blocked by a
+      planetary shield or by Conventions of War (Harrow is). Should it be?
+      And the Bastion's mechs may use Sustain Damage against the card's
+      backlash on their own forces, though LRR 87.1 speaks of hits made by
+      another player's units. OK?
+ W5.  Plasma Scoring (and Trrakan Aun Zulok, Starfall Array, Strike Wing
+      Ambuscade) on bombardment: now 1 extra die for the whole bombardment
+      (LRR 15.1: it is one roll), put on the planet with the most defending
+      ground forces - before, each planet bombarded got one. Should the
+      player choose the planet?
+ W6.  Magmus Reactor: ships may move into a supernova but not through it
+      (only the Muaat pass through). Its Production 5 doesn't get the +1 of
+      Accretion Engine or the Cosmic Phenomenae event. Right?
+ W7.  Magen Defense Grid (Codex): structures in space (Saar floating
+      factories, carried structures) now get their infantry in the space
+      area, as far as capacity allows; the Cheiran's Byssus mechs count as
+      structures for both halves; the free hit can hit any unit fighting
+      (Hel-Titans, the Matriarch's fighters); the infantry come before
+      Minister of Peace. OK?
+ W8.  Duranium Armor repairs the most valuable damaged unit by itself (war
+      sun, flagship, dreadnought, cruiser, carrier, destroyer, mech). Should
+      the player choose?
+ W9.  Deliverance Engine (Kortali): the Kortali choose which ship (not a
+      carrier) takes the hit; it is only offered when such a ship is there.
+      OK?
+ W10. Brood Pod (Cheiran): Byssus mechs can be picked too. Emergency
+      Mobilization (Celdauri): the command token it removes goes back to your
+      reinforcements, so you may activate that system again later. OK?
+ W11. Sanctification Field on a Nekro's Valefar Assimilator silences the
+      copied technology as well. OK?
+ W12. Self-Assembly Routines: no trade good for mechs that are removed
+      (capacity, Watcher...) rather than destroyed, and no mech after an
+      ability's own production (Dirzuga Rophal, Parallel Production...). OK?
+ W13. Vortex can't capture from a player who blockades one of your space
+      docks (LRR 17.6) - those units are no longer offered. A Nekro who
+      captured units with a copied Vortex may give them back in a deal. OK?
+ W14. Not changed yet: AI Development Algorithm isn't used for research when
+      a Discordant Stars waiver (Favor of Rhodun, Strain Dispersal, Bishop
+      Ulin) covers the gap - the waiver goes first; a Duranium Armor + Non-
+      Euclidean Shielding fight nobody can win stops after 60 rounds with
+      both fleets still there (the FAQ says the attacker retreats or is
+      destroyed).
+
+0.44.7 (the propulsion technology check) asked these:
+ P1.  Wormhole Generator: the game always plays the Codex Omega card (an
+      action: exhaust it to place or move a Creuss wormhole token), even with
+      the Codex off - it then just drops the Omega sign from the name. The
+      original card (start of the status phase, no exhaust) isn't in the
+      game. OK, or should games without the Codex play the original?
+ P2.  Wormhole Generator can't put a token in the Wormhole Nexus or the Creuss
+      home system (systems off the board). Should it?
+ P3.  Spatial Conduit Cylinder: PDS II next to the "new" neighbours don't fire
+      space cannon into the active system through the conduit (the conduit is
+      for movement). Right?
+ P4.  Fleet Logistics: "Pass" isn't offered as the second action (only "End
+      turn"). Should a player be able to pass with their second action?
+ P5.  Sling Relay can't be used at a blockaded space dock. Since 0.44.5 it
+      isn't the PRODUCTION ability (no Sarween Tools), and LRR 14.1 talks of
+      units with PRODUCTION. Keep it blocked?
+ P6.  Gravity Drive, Ionian Fuel Refinery, Midas Turbine and the like each give
+      1 ship +1 - the game doesn't let two of them stack on the same ship
+      (+2). Right? (Lightning Drives on top of Gravity Drive doesn't stack
+      either.)
+ P7.  Pilgrimage Beacons: systems with other players' ships are left out (as
+      with Priestess Tuh) - ships can't be produced there anyway. And its ship
+      now comes after the action in which the planets were exhausted. OK?
+ P8.  Not changed yet: a carrier picking up units on its way may use Gravity
+      Drive's +1 for the detour without using up the bonus; Shrouded
+      Skirmishers only for the active player.
+
+0.44.6 (the biotic technology check) asked these:
+ G1.  Radical Advancement (Deepwrought): the game swaps only non-faction
+      technologies for non-faction ones (base / Prophecy of Kings). May it
+      take or give a faction technology too?
+ G2.  Zhrgar Stimulants (Kjalengard): "after a player rolls combat dice" -
+      the Kjalengard may now let any player in any combat reroll their
+      misses (the bots only use it for themselves). OK?
+ G3.  Harrow (L1Z1X) counts as using BOMBARDMENT, so X-89 Bacterial Weapon
+      (and Proxima Targeting VI) apply to it. OK?
+ G4.  Psychoarchaeology's trade goods can only be taken on your own turn
+      (a choice in your action menu), not on another player's turn. Fine?
+ G5.  Bio-Stims can't ready a breakthrough (only planets and technologies).
+      Right?
+ G6.  Not changed yet: Pilgrimage Beacons (Rhodun) only triggers when
+      specialty planets are exhausted for research - it will be looked at
+      with the propulsion (blue) technologies.
+
+0.44.5 (the cybernetic technology check) asked these:
+ C1.  Sarween Tools (and AI Development Algorithm) only work with the
+      PRODUCTION ability - the Living Rules FAQ says so for Sarween. So they
+      no longer apply to Sling Relay, Integrated Economy, Contractual
+      Obligations, Parallel Production, Chaos Mapping, Dirzuga Rophal, Duha
+      Menaimon, Letani Miasmiala or Umbat. This changes 0.43.3's E3 answer:
+      Integrated Economy now gets no Sarween discount at all. OK?
+ C2.  Agency Supply Network (Keleres): "resolve another of your units'
+      PRODUCTION abilities in any system" - the game now needs another
+      system, because every unit in a system resolves its Production
+      together. The bots used to build twice at home. Right?
+ C3.  Local Contracts (Nokar): allowed in a system that already holds your
+      command token (no second token is placed, Living Rules 20.6), and when
+      your reinforcements are empty a token comes from a pool. OK?
+ C4.  Parallel Production (Ghoti): the 2 systems can't include the system
+      that just produced (as before). Right, or may it be one of them?
+ C5.  Contractual Obligations (Roh'Dhna): the game doesn't let the Roh'Dhna
+      choose themselves as one of "1 player". Right?
+ C6.  Salvage Operations (Mentak): a draw (every ship destroyed) gives no
+      trade good - nobody won or lost. OK?
+ C7.  Hegemonic Trade Policy (Winnu): the swap lasts the turn, so a space
+      dock on that planet produces by the new resource value (Mecatol Rex's
+      dock: 3 becomes 8). OK?
+ C8.  Encrypted Trade Hub (Edyn): the relic part works (its owner, a party to
+      the transaction, exhausts it); agendas can't change hands in this
+      game yet, so that part isn't there.
+ C9.  Transit Diodes moves infantry and mechs. Should it move the Titans'
+      awakened Hel-Titans (PDS that are ground forces) too? It doesn't now.
+ C10. Predictive Intelligence: the 3 extra votes only in the agenda phase,
+      as the card says - not on an agenda voted during the action phase
+      (Executive Order). OK?
+ C11. Not in the game yet: Inheritance Systems (L1Z1X) is only offered when
+      the technology can't be paid otherwise, and not with Reveal Prototype;
+      Recursive Worm (Cymiae) still skips players with empty
+      reinforcements.
+
+0.44.4 (the breakthrough check) asked these:
+ B1.  Professional Intrigue (Li-Zho) and Insurrectionist Networking (Olradin)
+      move infantry "into coexistence" on another player's planet. I read
+      coexisting as sharing the planet with that player's units, so the
+      planet must have some of their units on it (an empty enemy planet
+      would just be taken at the end of the action, without a fight).
+      Right, or may they go onto an empty enemy planet too?
+ B2.  Stabilization Arrays (Mirveda, Eye of the Curator fighters): the data
+      I have says each fighter takes half a slot of capacity. The game
+      instead counts them as half a ship for the fleet pool and a full slot
+      for capacity. Which is right?
+ B3.  Bannerhalls (Kjalengard): spent like 1-resource / 1-influence cards
+      when paying. Can they be exhausted for votes too (1 vote each)? The
+      game says no.
+ B4.  Exodus Engineering (Dih-Mohn): "you can produce ships in systems that
+      contain both your ships and another player's ships" - the game reads
+      it as part of this ability's production only, not a standing rule.
+ B5.  Trade Protectorate (Celdauri): the Celagrom is a second flagship, so
+      they may have 2 flagships while they hold the card. If the Celagrom is
+      destroyed, the game lets them build a second ordinary flagship. OK?
+ B6.  Cult of the All-Mother (Ghoti): "retreat to any empty system without
+      another player's ships" - the game allows any system without planets
+      on the board, at any distance, but not a supernova or asteroid field
+      their ships couldn't enter, and not a system Lost Cause closed.
+ B7.  Absolute Synergy (Naaz-Rokha): Eidolon Maximum now moves by itself as a
+      ship (Move 3, needs no capacity, counts toward the fleet pool, a ship
+      in its space area). On a planet it is still carried like a ground force,
+      and it doesn't join a space combat from a planet. OK?
+ B8.  Gravleash Maneuvers (Letnev): ships move as the fastest ship moving out
+      of the same system with them (fighters count) - ships staying behind
+      don't lend their move value any more.
+ B9.  Not in the game yet: the Titans' "other
+      players may allow you to place a sleeper on their planet", the Yssaril
+      sharing Scheming (Stall Tactics is shared), the Omni-Forgeworld's space
+      station half (Roh'Dhna) and a few flagship abilities through Valefar
+      Assimilator Z (Hil Colish, The Terror Between, The Inferno, Artemiris,
+      Dynamo).
+
+0.44.3 asked nothing new. (The breakthrough cards follow your Psychospore
+picture - warfare on the left, biotic on the right - and every other card
+puts its two colours the same way round relative to my data. If a printed
+card shows its pair the other way round, tell me.) From 0.44.2:
+
+0.44.2 asked one thing:
+ R1.  Coexistence (Thunder's Edge rulebook, "Coexist"): I read "Coexisting
+      units can have combat initiated against them by units being committed
+      to the planet that contains them, including units that they were
+      already coexisting with" as: the active player may start the fight
+      with the ground forces already on that planet - no new ones need to
+      land. So at the landing step of a tactical action in that system the
+      game asks "Attack <player>'s coexisting units on <planet>?" (and, if
+      your own units are the coexisting ones, "End your coexistence on
+      <planet>?" - win and the planet is yours). Is that how you play it,
+      or must at least one new ground force be committed to the planet?
+
+0.44.1 asked nothing new. One rules fix to know about: the Veldyr's first
+Branch Office (Tax Haven) was never dealt to them (since 0.42.0) - new games
+give them all four; games started before 0.44.1 keep playing with three.
+0.44.0 (the ground combat overhaul) asked nothing new either. 0.43.4 put in your answers to the 0.43.3 list (X1-X2, your replies on
+D7-D132 and Bug 12, E1-E8, T34-T51). Nothing is waiting for an answer now:
+every question so far has one. What I did with each, then the older lists
+for reference (no need to answer them again).
+
+YOUR 0.43.3 ANSWERS - WHAT I DID
+ X1.  Thunder's Edge's Codex is used in both cases: a game with the Codex
+      ticked, or with Thunder's Edge ticked (even if the Codex box isn't),
+      plays the Codex Omega cards in their Thunder's Edge versions (X-89
+      Bacterial Weapon: double hits on bombardment and ground combat, the
+      bombarded planet exhausted). The Modules screen says so on the Codex
+      row. Games started before 0.43.4 keep what they had.
+ X2.  Upper-case Omega - done (0.43.3).
+ D7.  Pyndil Gonsuul (Vaylerian commander) is now exactly as the card: when
+      you activate a system you choose one of your ships with a capacity
+      value (it asks only if you have more than one kind) and that ship
+      has +2 capacity for the tactical action. The feed says which.
+ D40. The commander's card text and the message when it's used now say
+      that the specialty is still exhausted and may skip a prerequisite of
+      any colour.
+ D67. The most recent printing it is: the Florzen ability is now called
+      Shadow Markets everywhere (faction sheet, prompts, feed).
+ D82, D112, D44 / D132: nothing to change.
+ D117. The Lady and the Lord as two unit types is on the progress list
+      (Windows / Steam Deck edition), and so is your new item: ships drawn
+      on the map tiles (the small, non-expanded tiles).
+ Bug 12. When Pre-Fab Arcologies readies a planet you explored, the feed
+      now says so ("... is readied: Pre-Fab Arcologies readies each planet
+      you explore.").
+ Not played by the computer players: OK. The sharper Retrowave picture on
+      PC is on the progress list (Windows / Steam Deck edition).
+ E1.  Checked against the Thunder's Edge rulebook ("Coexist"): the active
+      player may choose to fight coexisting units after beating the
+      planet's owner, in a separate combat; if they lose it, the
+      survivors simply keep coexisting, and coexisting units that end up
+      as the only units on the planet take control of it. That is what the
+      game does - no change.
+ E2.  Checked: Living Rules 25.5 - a player who no longer has units on a
+      planet loses it when another player has units there, and the player
+      who placed the units gains control (25.5a); during an invasion that
+      happens in the "establish control" step (25.5b). A Daedalon mech or
+      Meteor Slings infantry with nobody to fight is such a placement, so
+      the planet changes hands at that step whatever happened in space.
+      No change.
+ E3.  Integrated Economy (Jol-Nar): I found no official ruling (the old
+      Fantasy Flight forum threads ask the same question and leave it
+      open). The card limits "units that have a combined cost" up to the
+      planet's resources - the units' printed cost - and Sarween Tools
+      reduces the resources you spend, not the cost. So the game keeps
+      that reading: the cost is the limit, Sarween only makes it cheaper.
+      If you'd rather let Sarween stretch the limit, say so.
+ E4-E7. As you said.
+ E8.  Kingslay pushes harder when the Mecatol Rex holder is 1 or more
+      points ahead of everyone else: the bot sent after them goes for them
+      even more and accepts slightly worse odds, and the other bots lean on
+      the holder more too.
+ T34. Galactic events: still any number, but the screen shows a red
+      warning once more than 2 are ticked.
+ T35-T51. As you said.
+
+ANSWERED IN 0.43.3 (the debugging pass, E1-E8)
+ E1.  An invader chooses to fight coexisting units and loses: the
+      survivors go back to coexisting with the planet's controller (they
+      used to stay as a second army on the planet). OK?
+ E2.  A Daedalon mech or Meteor Slings infantry put on a planet with
+      nobody there to fight takes the planet at the end of the tactical
+      action, even if the space combat was lost - the invasion's last step
+      (establish control) still happens. OK?
+ E3.  Integrated Economy: the limit is the units' cost; Sarween Tools
+      lowers what you pay, not the limit. OK?
+ E4.  Objectives count the systems the rules make anomalies: a Vuil'raith
+      Dimensional Tear (a gravity rift), the Nivyn Wound, the Veldyr home
+      with Aurora Research Base (a nebula) - for Brave the Void, Learn the
+      Secrets of the Cosmos, Make History, Become a Legend. OK?
+ E5.  Foster Cohesion: eliminated players don't count. OK?
+ E6.  Udosh B'rtul: the bots also use it when a planet with 2+ resources
+      saves their influence (people still choose on any influence payment,
+      D35). OK?
+ E7.  Thunder's Edge Warfare: the bots now play it only when the free
+      tactical action does something worth a tactic token (over a third of
+      their Warfare plays used to move nothing). OK?
+ E8.  Kingslay: the bot sent after the long-time holder of Mecatol Rex now
+      also targets the holder's home, gathers its warships next to Mecatol
+      Rex (or that home) first, and accepts an even fight there; the other
+      bots lean against the holder too. Worth more push, or about right?
+
+NEW IN 0.42.2 (found by the bot testing)
+D135. Colonial Redistribution elects a planet with a Cheiran mech on it: the
+      agenda destroys every unit, the mech's Nauplius puts an infantry back.
+      Then nobody else may place the agenda's infantry there (two players'
+      armies would share the planet with no combat), and the Cheiran keep
+      it. OK, or should the Nauplius infantry be destroyed too?
+
+NEW IN 0.42.0 (Discordant Stars batch 6 - the last four)
+D119. Branch Offices (Veldyr): a received one attaches at once to one of the
+      receiver's non-home planets (not Mecatol Rex) without one; with no
+      such planet it goes back to the Veldyr. OK?
+
+D120. Holding Company counts every Branch Office on the board, whoever
+      controls the planet. Targeted Acquisition: one note per status phase,
+      to a neighbour. OK?
+
+D121. SEIDR Project: the best space cannon among their units in the system
+      (ships, or PDS on its planets) fires after each round while the
+      opponent still has ships. OK?
+
+D122. Solis Morden: one planet's influence pays the resources of a research
+      (that planet is exhausted). Vera Khage: 1 prerequisite less when a
+      player with a Branch Office planet owns the technology. Auberon
+      Elyrin: the Veldyr's own version of that unit upgrade (a faction one
+      first). OK?
+
+D123. Aurora Stormcaller: whenever its system is activated, by anyone. OK?
+
+D124. Traps (Li-Zho): revealed against any other player; a revealed Trap
+      goes back to their reinforcements at the end of the tactical action.
+      Feint is never revealed - it is the bluff. Account Siphon: up to 2
+      trade goods or up to 3 commodities (as trade goods for the Li-Zho).
+      OK?
+
+D125. Gravitic Inhibitor counts non-fighter ships moving in. Interference
+      Grid: -1 to all of the chosen player's combat rolls in that space
+      combat. OK?
+
+D126. Silence of Stars ("only an uncanceled hit can destroy it") isn't in
+      yet - effects that destroy it directly still work. OK for now?
+
+D127. Wraith Engine: every ship of the chosen type in that system counts as
+      adjacent (single ships can't be told apart); the bots don't use it.
+      Khaz-Rin Li-Zho: Traps may go on any non-home planet. OK?
+
+D128. Gauss Cannons (Mirveda PDS) sit in the space area: their space cannon
+      fires at activations from there (defence is only for units on the
+      invaded planet) and they bombard from there; they aren't ships (no
+      space combat, no fleet pool); blockaded, they are destroyed at the end
+      of the tactical action or in the status phase. The bots don't move
+      them yet. OK?
+
+D129. Privileged Citizenry: Construction puts a Gauss Cannon in a system
+      with one of your planets, up to your fleet tokens there. Combat
+      Drones: every fighter in the active system may become infantry at the
+      start of an invasion. OK?
+
+D130. Orbital Defense Grid: at an invasion of their system, one of their
+      planets there can't be bombarded; exhausted, it destroys one unit
+      landing on their planet (a mech first). OK?
+
+D131. Assault Machina: all their space cannon reaches the next systems (not
+      only one unit); the infantry-for-fighters swap isn't in. Wrath
+      Machina: every PDS of theirs on the board fires at the chosen system.
+      OK?
+
+D132. Mobile Command (Ghoti): the home system follows the flagship when it
+      ends a move; if it is destroyed, the home stays where it last was. In
+      another player's home system it stays that player's home too. "It
+      can't be captured" isn't in yet. OK?
+
+D133. Spawning Grounds: the Ghoti planet card (3/3) is spent like a planet
+      (payments and votes) and readies in the status phase. All Mother:
+      Production = their fleet tokens; ground forces it builds stay in
+      space. OK?
+
+D134. Parallel Production: 1 more ship in each of up to 2 other systems,
+      paid as usual. Becece: +2 to that production or 1 trade good. Ghoti
+      Relay: up to 2 ships, paid as usual. OK?
+
+NEW IN 0.41.0 (Discordant Stars batch 5)
+ D99. Rally to the Cause (Free Systems): the 2 ships are paid for as usual.
+      It works after any production at home that made ships (the Warfare
+      secondary too). Liberator: 1 trade good for a mech on one of their
+      planets in or next to that system. OK?
+
+D100. Diplomats: once per action, in any single payment of resources or
+      influence; the free planet's card is exhausted and readies in the
+      status phase like the others. Mecatol Rex isn't one of them (Free
+      People leaves it out). OK?
+
+D101. Envoy Network: we only use "4 more votes when the planets you exhaust
+      to vote include a cultural, a hazardous and an industrial one". What
+      is the first sentence (choose and exhaust those planets at the start
+      of the agenda phase) for?
+
+D102. Cordo Haved: it can copy Hope's End, Primor, Mirage, Mallice and
+      Silence (Imperial Salvage Yard). Lending it to another player isn't
+      offered yet. OK?
+
+D103. Count Otto P'may: the Heart of Rebellion works like the Demilitarized
+      Zone - no units can land, be produced or be placed there - and the
+      planet stays the Free Systems'. OK?
+
+D104. Grace (Edyn): "readied or unchosen" = a lower card nobody has used
+      this round (held but not played yet, or not taken at all). The
+      secondary is free; once per action phase. OK?
+
+D105. Decree: always on - other players' ships can't pass through (but may
+      stop in) anomalies with Edyn ground forces. Sigils (systems with an
+      Edyn mech) count as anomalies for this. OK?
+
+D106. Radiance and Unity Algorithm share one prediction per agenda; Unity
+      Algorithm pays out once per agenda phase, when it is right. Encrypted
+      Trade Hub: the Edyn vote last unless Hack Election or Conspirators
+      already chose the last voter. Its relic / agenda trading isn't in
+      yet. OK?
+
+D107. Allant: the chosen player takes 1 action at once (strategic actions
+      only if they still have an unused card); then the Edyn see the top
+      agenda and may discard it. The bots only use it for themselves. OK?
+
+D108. Kadryn: in the status phase scoring step, a secret objective instead
+      of scoring a public one (the bots: only when they can't score one).
+      OK?
+
+D109. Midir: each agenda is resolved as if the Edyn alone cast 1 vote.
+      Other players' abilities aren't blocked during it yet. OK?
+
+D110. Hired Guns: only Nokar ships already in the active system, and the
+      active player pays 1 trade good per ship (our stand-in for the deal
+      the ability implies). The ships kept need room in the buyer's
+      reinforcements; the rest go back. Jack Hallard unlocks the first time
+      Hired Guns is used ("another player moves your ships"). OK?
+
+D111. Desperados: the +1 move counts whenever the Nokar aren't the active
+      player. Local Contracts is a component action. Starsails: Production
+      3 on each of their planets, without a space dock too. OK?
+
+D112. Axis Orders: bought with commodities right after a refill (Trade,
+      Shipmonger Zsknck...); a used order goes back to the Axis at the start
+      of the status phase. Designer TckVsk: 6 resources for the generic
+      upgrade of that unit. OK?
+
+D113. Rift Engines: every ship of the chosen type in that system moves 2
+      further (single ships can't be told apart); the bots don't use it.
+      OK?
+
+D114. Divination: chosen before the roll - one die of that roll becomes the
+      Omen die. Lactarius Indigo: against a player rolling in a space combat
+      with the Myko-Mentori; the Omen die stays near the sheet. OK?
+
+D115. Necrophage: after the first round of each combat they fight (space
+      and ground). Psychoactive Armaments: all the opponent's misses roll
+      again. Gift of Insight: once per turn, the holder's worst missed
+      combat die rolls again. OK?
+
+D116. Soul Cage: only heroes we can run for another faction are bound -
+      Dorrahn Griphyn, Bayan, The Voice United, Korela, Kantrus and Count
+      Otto P'may; the others are purged as usual. The Myko-Mentori hero
+      must be unlocked to catch them. OK?
+
+D117. The Lady & The Lord: a flagship on the move counts as the Lord unless
+      the Lady moves alone; when both share a system and one leaves, the
+      Ghemina say which. Raid Leaders: a ship without capacity carries 2
+      (the others keep their own). OK?
+
+D118. Jotun: the "exactly 1 other mech" may be anyone's. Jarl Vel & Jarl
+      Jotrun: any structure on the planet counts. OK?
+
+NEW IN 0.40.0 (Discordant Stars batch 4)
+ D85. Cloaked Fleets / Shroud of Lith (Kollecc): cloaked units sit on their
+      faction sheet as captured units - they are not in the reinforcements,
+      so they can't be built again while there. Shroud of Lith brings up to
+      2 ships and 2 ground forces into the space area after the Kollecc
+      move there (ground forces beyond the capacity are removed, as usual).
+      OK?
+
+ D86. Treasure Hunters and AI Survey: the look at the top cards is offered
+      to a person playing the Kollecc (or holding AI Survey); the bots skip
+      it (knowing the card doesn't change what they do). Captain Dust: the
+      2 cards come from a deck matching a planet the player controls; the
+      fragments are kept, the rest discarded. OK?
+
+ D87. Nightingale V: every retreating unit goes onto the sheet (none moves
+      to the retreat system). Kado S'mah-Qar: no command token is placed in
+      the system they retreat to, when the active system has none of theirs.
+      OK?
+
+ D88. Facsimile / Secrets of the Weave: the price is the cost of the
+      attacker's ship as the attacker builds it (their upgrades count); the
+      defender may place that type even without its technology (a war sun
+      too). OK?
+
+ D89. Illusory Presence: the Mortheus exhaust up to 2 of their own planets
+      and the other player casts that much influence + 1 in extra votes, for
+      the outcome they just voted for. OK?
+
+ D90. Fine Print / Binding Debts: at most 6 of each player's tokens on the
+      Vaden's sheet (the real limit is the tokens a player has). "At any
+      time" is done through deals: any deal with the Vaden can put tokens on
+      their sheet (the bots offer commodities for them). Tokens can't be
+      placed outside a deal. OK?
+
+ D91. Collateralized Loans: 1 token per destroyed ship, for a ship of that
+      type from the Vaden's reinforcements (even a war sun without the
+      technology). Collector: at the end of every round of ground combat.
+      OK?
+
+ D92. Autonetic Memory: "draw 1 less" works on every draw of action cards
+      (Politics, Codex cards, Skhot...). Cybernetic Madness: only cards that
+      resolved are purged - a cancelled card (Sabotage) is discarded. OK?
+
+ D93. Unholy Abomination II: an infantry that comes back at the start of
+      their turn may go to any planet they control (not only the one it was
+      destroyed on). OK?
+
+ D94. Celestial Guides: the Nivyn still get the gravity rift's +1 move (they
+      just never roll). The Wound token starts off the board - only their
+      mech (Voidflare Warden) places or moves it. OK?
+
+ D95. Eradica: the Nivyn always remove the other players' units in its
+      system instead of destroying them (no "when destroyed" effects: no
+      Heroism, Fractal Plating, Unholy Abomination...); their own units are
+      destroyed as usual. OK?
+
+ D96. Kwill Drakkon: our data spells the Nivyn hero "Kwill Drakkon", your
+      reference says "Krill Drakkon" - which one? The hero doesn't place the
+      Wound: if it isn't on the board, the adjacency part does nothing.
+
+ D97. Suldhan Wraeg: used by the Nivyn only to protect themselves, after
+      the dice are rolled (it cancels the hits of the one unit whose dice
+      hit the most). OK?
+
+ D98. Policies: the Olradin choose the side of all three at the start of
+      the game (Pahn Silverfur flips one later). Rallypoint: the +1 counts
+      when the flagship could reach the active system (it moves with them).
+      Exemplar (mech) flips as soon as 2 policies are on their - side. OK?
+
+NEW IN 0.39.0 (Discordant Stars batch 3)
+ D57. Ancient Blueprints (Bentor): the unknown fragment is the frontier
+      deck's kind. The Wayfinder's +1 per token also counts on its
+      anti-fighter barrage, space cannon and bombardment dice. OK?
+
+ D58. Secret Maps: "has your unit with Production" = a space dock or other
+      Production unit on the planet; with Broker Network, also their
+      planets with a specialty or an attachment. One planet per tactical
+      action, not one they explored in it. OK?
+
+ D59. Merged Replicators: only the "+2 Production" half is there; swapping
+      a unit's Production with another one's isn't. OK for now?
+
+ D60. Encryption Key: the holder picks the specialty's colour when they
+      attach it (at the end of one of their turns), and it stays that
+      colour. Gledge Base and Automatons are attached the same way. OK?
+
+ D61. Capital Fleet: destroyers count as half a ship, rounded up (1
+      destroyer = 1, 2 = 1, 3 = 2). OK?
+
+ D62. Flotilla: infantry beyond their non-fighter ships in a space area go
+      back to the reinforcements whenever the capacity is checked (after a
+      move, a combat, production). Moves that break it are refused. OK?
+
+ D63. Aegis I / II: "another ship" = another of their own ships (not other
+      players'). Aegis I works during a space combat (barrage included);
+      Aegis II any time. OK?
+
+ D64. Maximus: the 2 units are paid for as usual (it is "produce"). OK?
+
+ D65. Verrisus Ypru: offered after both sides rolled; every ship that can
+      sustain damage in the system becomes damaged (both sides), and the
+      hits against the Dih-Mohn are cancelled for that round. OK?
+
+ D66. Mercenaries: the Florzen are asked at the start of every space
+      combat when they have fighters next to it - in or out of the
+      combat; the bots only use it in their own fights. OK?
+
+ D67. Black Markets: the deck of any trait one of their other planets has
+      (their choice, or the planet's own). OK?
+
+ D68. Man O' War: no action cards from other players during a space combat
+      in its system (Sabotage included). OK?
+
+ D69. Blackmail Programs: asked before every other player's strategic
+      action (after Coup d'Etat would have been played). OK?
+
+ D70. Sal Gavda: a Demilitarized Zone can't be moved (nor by Banua Gowen).
+      OK?
+
+ D71. Quaxdol Junitas unlocks when the outcome they voted for is resolved;
+      predictions (riders) don't count yet. OK?
+
+ D72. Privateer: when mechs are produced, up to their cost may be paid with
+      influence (from other planets than the resources part). OK?
+
+ D73. Mantle Cracking: always 4 trade goods. Celestial Reclamation sets the
+      base values; attachments still add to them. OK?
+
+ D74. Deep Mining: also when the Orion Platform or another effect would
+      explore a planet with their mech or structure. OK?
+
+ D75. Beg Bersha: every mech counts - any player's, in space or on planets,
+      in its system and the ones next to it. OK?
+
+ D76. Orion Platform: each qualifying die explores one planet with their PDS
+      (in the system - Orion II: also next to it); the bots don't track
+      which PDS rolled which die. Space cannon defense counts too. OK?
+
+ D77. Lightning Drives: a ship that needs the extra move carries no fighters
+      or infantry (mechs it may carry). OK?
+
+ D78. Exodriller: counts as 1 more resource when the planet is spent for
+      resources (if it has any influence). OK?
+
+ D79. Oracle AI: the card "chosen" is the next face-down objective (they
+      are face down and shuffled - the same thing). Only its player and a
+      holder of Read the Fates see it (faction sheet, feed). OK?
+
+ D80. Atropha: the 3 come from the set-aside objectives of the stage being
+      revealed (stage II only once stage I is done - Limited Vision); the
+      replaced card goes to the bottom of that pile. OK?
+
+ D81. Glory: the token goes into the system of the combat; placing a 4th is
+      a move. The research option offers unit upgrades of the unit types
+      still there after the combat. OK?
+
+ D82. Heroism: also their fighters and infantry destroyed by anti-fighter
+      barrage (it is part of the combat). Captured units are tokens: they
+      don't leave the reinforcements. OK?
+
+ D83. Ygegnad: removes their own command tokens (one per Glory token). The
+      Kjalengard may start with any non-faction unit upgrade - War Sun too
+      (the bots never pick it). OK?
+
+ D84. Star Dragon I / II: a carrier takes the better of the two routes -
+      ignoring the anomalies or using them (a gravity rift's +1). OK?
+
+NEW IN 0.38.0 (Discordant Stars batch 2)
+ D30. Lithoids: the Khrask's votes = the planets' resources; other vote
+      bonuses (Elder Qanoj, Council Preserve...) still add. OK?
+
+ D31. Garden Worlds: +1 resource while nobody's ground forces are on the
+      planet (their own included). OK?
+
+ D32. Meteor Slings: the infantry from converted hits fight in that
+      invasion's ground combat even if nothing else landed there. Stone
+      Speakers (their note) only during the holder's own tactical action.
+      OK?
+
+ D33. Splintering Gale: any 2 of their ships without Sustain Damage may use
+      it during that combat (when the hits come), not picked at the start.
+      OK?
+
+ D34. Stone's Embrace: the exhausted planet replaces the strategy token
+      (nothing else is taken from the reinforcements). OK?
+
+ D35. Udosh B'rtul: offered only when the influence payment can't be made
+      otherwise; that planet pays its resources and influence together. OK?
+
+ D36. Megalith: in the first round only the Khrask mechs roll - their own
+      infantry don't either. OK?
+
+ D37. Ancient Knowledge: each specialty covers 2 prerequisites of its
+      colour; the commodity comes only when a planet is really exhausted
+      (not with Psychoarchaeology). OK?
+
+ D38. Sanctification Field: only technologies that aren't unit upgrades can
+      be silenced (unit upgrades keep their stats). OK?
+
+ D39. Pilgrimage Beacons: when planets are exhausted for their
+      specialties while researching (not when paying). OK?
+
+ D40. Bishop Ulin: one ready specialty planet of any colour is exhausted to
+      ignore 1 prerequisite of any colour. OK?
+
+ D41. Saint Binal: any 3 non-faction technologies, prerequisites ignored;
+      you keep 1 at the next strategy phase. OK?
+
+ D42. Paranoia (Zelian) isn't enforced yet - nothing in the game blocks a
+      home activation that it would stop. OK?
+
+ D43. Impactor infantry bombard from the space area; they don't have to land
+      on the planet they bombarded. OK?
+
+ D44. Cataclysm: the system's planets are destroyed (like the Stellar
+      Converter); the tile isn't swapped for an asteroid field. OK?
+
+ D45. Terrafactory war suns: "1 fighter or infantry for its cost" isn't in
+      yet (they produce 2 like everything else). OK?
+
+ D46. Contractual Obligations: the chosen player picks the ship; if they
+      can't pay for one, nothing happens. OK?
+
+ D47. Automatons stays on its planet for good (it changes hands with the
+      planet). OK?
+
+ D48. Primespace Actualization: the production limit is every unit's
+      Production in that system added up. OK?
+
+ D49. Stealth Insertion has no effect in this version (units put onto a
+      planet with others already fight there). OK?
+
+ D50. Daedalon (Tnelis mech): only onto a planet without other players'
+      ground forces; the planet is taken in that invasion. OK?
+
+ D51. Fillipo Rois: the +1 move can go to any one ship (like Gravity
+      Drive). The bots don't use it. OK?
+
+ D52. Turra Sveyar: the attached secret is scored in the status phase like a
+      public objective; it stays attached until you score it (or you move it
+      to a newer one). OK?
+
+ D53. Starfall Gunnery: the 3 ships are those in the active system, firing
+      in space cannon offense; on other players' actions only your best
+      space cannon unit fires. OK?
+
+ D54. Rook: its space cannon hits only destroy fighters (the rest are
+      lost). OK?
+
+ D55. Coil Overcharge: one shot per component action, at ships in or next
+      to the firing unit's system. OK?
+
+ D56. Deliberate Action: the status phase's new tokens are still placed, but
+      the ones on your sheet can't be moved. OK?
+
+NEW IN 0.37.0 (Discordant Stars batch 1)
+ D1. The module goes with or without Thunder's Edge; with it on, faction
+     breakthroughs are off. The factions come in batches: a game only deals
+     (at random) the batches it was started with, so saves keep working when
+     more arrive. OK?
+
+ D2. Zealous (Kortali): only when the secondary really costs a strategy
+     token (not when it is free, e.g. Acquiescence). With Thunder's Edge on,
+     it resolves the revised Warfare primary. The bots always follow Warfare
+     then. OK?
+
+ D3. Ruthless: only for the invader of an exhausted planet it doesn't
+     control, before the first round. OK?
+
+ D4. Tempest Drive: it takes back YOUR command token from that system. OK?
+
+ D5. Cargo Raiders: asked when the opponent announces a retreat in the first
+     round; they may pay 1 trade good and go anyway. For the Raider
+     cruisers, "can't declare a retreat" = no system to retreat to, or the
+     first round against Cargo Raiders with no trade good. Raider II's hits
+     survive effects that cancel hits (Shields Holding...). OK?
+
+ D6. Raider I "only transports ground forces": fighters must fit the other
+     ships' capacity (or a dock's fighter slots). OK?
+
+ D7. Pyndil Gonsuul (commander): +2 capacity for each of your fleets with a
+     capacity ship during that tactical action - a simplification of "1
+     ship". OK?
+
+ D8. Eclipse (Vaylerian mech, in the active system during your tactical
+     action): space cannon hits beyond what your other ships can take are
+     lost - your biggest ship is the one kept out of reach. OK?
+
+ D9. Clan's Favor: the holder's ships go to a neighbouring system without
+     other players' ships (a command token from the reinforcements), the
+     combat is a draw; the Vaylerian discard a random action card (if they
+     have one). OK?
+
+ D10. A New Edifice: a relic the Lanefir would gain is purged (out of the
+      game) and they explore up to 3 of their planets. Iconoclasm is used
+      by itself when a technology needs it (they have no specialties). OK?
+
+ D11. The Venerable: 1 command token per relic in every player's play area;
+      swaps: another player's relic for one of the revealed ones (theirs
+      goes back into the shuffled relic deck). OK?
+
+ D12. Troubadour (Lanefir mech): "then you may end your turn" isn't offered
+      - you always take your turn after it. OK?
+
+ D13. Plague Reservoir (Kyro) does nothing yet: it only lets them fight a
+      ground combat with nobody there. OK to leave it, or what is it for?
+
+ D14. Contagion: any planet in or next to a system with a Kyro planet,
+      except other players' home planets; the infantry fights at once (no
+      space cannon defense). The Kyro may hold back if every target is
+      defended. OK?
+
+ D15. Subversive: a draw = both sides wiped out, or ended by Skilled
+      Retreat / Clan's Favor. Winning it gives no planet without units. OK?
+
+ D16. Silas Deriga (Kyro commander): the extra votes are added after
+      everyone has voted. OK?
+
+ D17. Brikk Strain (Kyro hero): the card has initiative 9 and the trade
+      goods put on it go to the Kyro. "Others resolve only 1 clause of its
+      primary" isn't in yet. OK?
+
+ D18. Vector Programs: the 2 trade goods from the supply only (putting your
+      own trade goods on cards isn't offered). OK?
+
+ D19. Kyro Rider uses the Keleres Rider's timing (after the reveal, before
+      the votes). OK?
+
+ D20. Moult: 1 ship, cheaper by the Cheiran's non-fighter ships destroyed in
+      that combat. OK?
+
+ D21. Byssus: Cheiran mechs on their planets count as structures for Brood
+      Pod, the Lithodax, Operator Kkavras, Thakt Clqua and Spc. Phquaiset's
+      unlock. OK?
+
+ D22. Thakt Clqua: the ships go to one system with a Cheiran structure and
+      no other ships; ground forces and structures onto a planet you
+      control there (else at home). OK?
+
+ D23. Spc. Phquaiset: "while you are the defender" = you are not the active
+      player. OK?
+
+ D24. Projection of Power / Trade Port: dice at 6 added to your
+      anti-fighter barrage; Trade Port II fires again at the start of every
+      later round. OK?
+
+ D25. Supremacy (Celdauri flagship): other players' space docks in its
+      system add their Production to yours (ships only). OK?
+
+ D26. Henry Storcher: systems with your space docks are next to each other
+      for movement and retreats. Trade Alliance goes face up like an
+      Alliance. OK?
+
+ D27. Titus Flavius: after anyone activates a system (not Mecatol Rex) with
+      a Celdauri planet; Production uses all your units there. OK?
+
+ D28. Agents (as with the base factions, RULES-CHECK 0.6.0 #2) are only
+      offered when their owner is involved, or promised in a deal. OK?
+
+ D29. The bots' Strategy Core plans for these factions come from the
+      Discordant Stars reference (the Cardboard Crash Course video's
+      transcript couldn't be reached from here). If you have it as a file,
+      send it and I'll rework them.
+
+NEW IN 0.36.0 (galactic events)
+ T34. Galactic events are ticked on the Modules screen (the last row, under
+      Thunder's Edge) and go into the next new game; any number can be on
+      together. OK?
+
+ T35. Age of Commerce: "no maximum" - a refill (Trade, Harness, Merchant
+      Station...) adds your commodity value to what you have, and effects
+      that give commodities up to your value have no cap. A shared
+      technology: any non-faction technology the giver owns and the
+      receiver doesn't; the receiver gains it as if researched. OK?
+
+ T36. Call of the Void: +1 move for all your ships when the active system
+      is in the Fracture; the command token when at least 1 unit moved into
+      it. OK?
+
+ T37. Dangerous Wilds: "from the deck" = the first time anyone gains the
+      planet. The research ignores up to [its resources] prerequisites, of
+      any colours. The guards are topped up at the end of each round on
+      hazardous planets nobody holds and where no player has ground forces.
+      OK?
+
+ T38. Hidden Agenda: votes show as "casts their votes in secret", the totals
+      come at the end (the Argent's are seen as they vote), and the bots
+      don't see the others' votes either. No deals at all in the agenda
+      phase. OK?
+
+ T39. Age of Exploration: Dark Energy Tap's action needs a non-home edge
+      system with your ships; the new tile goes in an empty space touching
+      it and at least 2 non-home systems. OK?
+
+ T40. Civilized Society: ties are broken by the influence of controlled
+      planets + trade goods, then by initiative order. The usual "nothing
+      left to reveal" ending doesn't apply (everything is out from the
+      start). OK?
+
+ T41. Minor Factions: one minor faction per player (if enough factions are
+      left), on second-ring systems between the homes - the most
+      equidistant first, never two side by side - replacing those tiles
+      after the galaxy is built (instead of dealing one blue tile less).
+      Factions whose home is off the board (Creuss, Crimson) aren't used.
+      The Alliance goes to whoever holds every planet of that system (and
+      leaves the last one). OK?
+
+ T42. Stellar Atomics: also destroys neutral ground forces; the token only
+      matters for voting and playing action cards in the agenda phase. OK?
+
+ T43. Age of Fighters: "fighters that count against your fleet pool" - each
+      fighter in a space area can carry 1 ground force beyond the ships'
+      capacity (once the ships are full, those are the fighters that count
+      against the fleet pool). Destroyed non-fighter ships are purged (they
+      leave your reinforcements for good). OK?
+
+ T44. Total War: a unit is worth its cost (dreadnought 4, war sun 12...),
+      infantry and fighters 1 each; neutral units give nothing; the
+      commodities go on the first home planet you control. Taking a planet
+      with commodities asks whether to carry them home. OK?
+
+ T45. Wild, Wild Galaxy: Direct Hit works on a mech that used Sustain
+      Damage in a ground combat; Shields Holding cancels 2 hits in a ground
+      combat; Stellar Converter works anywhere (homes, legendary planets,
+      Mecatol Rex); Adjudicator Ba'al anywhere but the Muaat's own home.
+      OK?
+
+ T46. Weird Wormholes: any step through a wormhole counts (a route doesn't
+      tell alpha / beta / gamma from delta / epsilon); each ship rolls on
+      its own; a type with none left (or a flagship already on the board)
+      is skipped. OK?
+
+ T47. Monuments to the Ages: offered whenever you place a structure on a
+      non-home planet through Construction (and other effects that place
+      one the same way). The points go to the planet's holder and move
+      with it. OK?
+
+ T48. Cosmic Phenomenae: the optional "+1 move out of a gravity rift, lost
+      on 1-5" isn't offered yet (rifts work as usual). Fighter I in an
+      asteroid field doesn't roll (it can still be hit). OK?
+
+ T49. Cultural Exchange Program is not in yet: our leaders' rules are tied
+      to their own faction, and swapping them needs a bigger change. It is
+      greyed out ("coming later"). OK to leave it for now?
+
+ T50. Mercenaries for Hire / Zealous Orthodoxy: the Alliance ability of a
+      faction in play works while its commander is unlocked (as with the
+      Alliance note); a mercenary's (faction not in play) always works.
+      Rapid Mobilization: a planet next to two homes gets nobody's
+      infantry; the space dock goes on any planet you control without one.
+      OK?
+
+ T51. Advent of the War Sun: the Muaat lose Fires of the Gashlai (their
+      faction note), unlock their commander and start with a second war
+      sun. OK?
+
+NEW IN 0.35.0 (Thunder's Edge's five factions)
+ T19. Galvanize: a galvanized unit rolls 1 more die for combat and for unit
+      abilities (space cannon, bombardment, anti-fighter barrage). When a
+      group of units takes losses, the galvanized ones go last. A unit
+      keeps its token while it moves with your fleet. OK?
+
+ T20. Proxima Targeting VI: each of your galvanized units on the planet
+      cancels 1 bombardment hit against your ground forces there. Its
+      start-of-round roll is 3 dice at 8 against the opponent's ground
+      forces, then the same against yours. OK?
+
+ T21. Miniaturization (Ral Nel): structures carried in a space area do
+      nothing, but each Linkship there may fire one of their space cannons
+      (Linkship I: each PDS once; Linkship II: every Linkship may use the
+      same one). Only space cannon offense - in the active system, or from
+      next door with PDS II. OK?
+
+ T22. Coexistence (Deepwrought): coexisting units don't control the planet
+      and don't count it for objectives; when they are the only units
+      left, they take it. Ocean cards (like the Custodia Vigilia card and
+      The Triad) pay resources or influence but don't vote. OK?
+
+ T23. The Deepwrought flagship moves through systems with your units even
+      when other players' units are there; each such system it passes
+      through gives it 1 more move. OK?
+
+ T24. The Quietus (Crimson flagship): while it is in a system with an
+      active breach, other players' units in any system with an active
+      breach lose their unit abilities (Sustain Damage, Planetary Shield,
+      Production, space cannon, bombardment, barrage). OK?
+
+ T25. Plots Within Plots: each secret objective another player has scored
+      can give the Firmament one plot (not one per player who scored it).
+      Status-phase secrets are checked right after the Firmament's own
+      scoring; action-phase ones when the Firmament does the same thing
+      (e.g. destroys a flagship). A secret that costs something (discard 5
+      action cards, spend...) costs the Firmament too. With all 5 plot
+      cards in play, nothing more happens. OK?
+
+ T26. Black Ops: received in a deal, it resolves at once (the Firmament may
+      put a plot with your token; you gain 2 command tokens and 2 trade
+      goods) and is purged. After the coup the Obsidian get Malevolency in
+      hand, whether Black Ops was given away or not. OK?
+
+ T27. Malevolency: "spend 1 influence" can be paid with planets or a trade
+      good; any neighbour can get it, the Obsidian included. At the end of
+      the status phase its holder (unless the Obsidian) loses a fleet
+      token, if they have one. OK?
+
+ T28. Seethe, when revealed: every unit on the chosen planet is destroyed,
+      whoever's (the Obsidian's too). Each status phase the Obsidian pick
+      which of the puppet's infantry dies. OK?
+
+ T29. Enervate: the Obsidian's secondary of a puppet's strategy card costs
+      no command token - and, as with Acquiescence, Construction's
+      secondary then places no token either. For Leadership they may take
+      the primary instead. OK?
+
+ T30. Myru Vos (Firmament agent): only "space cannon can't be used against
+      those ships" - "non-transporting ships may move through other
+      players' ships" is left out (the move screen moves carriers and their
+      cargo together). It can be used for yourself or a player you
+      promised it to. Vos Hollow (Obsidian agent) can also be used when the
+      Obsidian aren't in the combat. OK?
+
+ T31. Captain Aroz (Firmament commander): for secret objectives - your own
+      and the ones you score with Plots Within Plots - planets in systems
+      with your ships count as yours; "control Mecatol Rex" in Occupy the
+      Seat of the Empire still needs real control. OK?
+
+ T32. The Sowing: trade goods put on it stay there until the Firmament
+      become the Obsidian (The Reaping pays them back twice over at the
+      start of the next status phase); if the coup never happens, they
+      are lost. OK?
+
+ T33. The bots don't use (yet): Miniaturization's carrying, Wing Transfer
+      (Argent breakthrough), Ahk Ravin (Crimson agent) and Sever. They play
+      everything else. Fine for now?
+
+(The 0.34.0 Thunder's Edge questions follow; the Uncharted Space ones are still open below them.)
+
+NEW IN 0.34.0 (Thunder's Edge preview - everything but the new factions
+and galactic events)
+ T1. Space stations: the only player with ships in the system takes them
+     (after space combat, or after producing there) and keeps them when the
+     ships leave. Each adds 1 to its holder's commodity value. They don't
+     count as planets for objectives, votes or "control your home". Their
+     holders may trade with each other as if they were neighbours. OK?
+
+ T2. Entropic scar: no unit abilities work in it or against units in it
+     (anti-fighter barrage, space cannon, bombardment, Sustain Damage,
+     Planetary Shield, Production). OK?
+
+ T3. Neutral units never decide anything: hits are given to their units in
+     the reference card's order (fighters first, then destroyers...), they
+     always use Sustain Damage, space cannon and anti-fighter barrage, and
+     they are repaired in the status phase. OK?
+
+ T4. The expedition is offered at the end of each of your turns (one slice
+     per turn). The bots like their first slice a lot (it brings the
+     breakthrough), so at 6 players the expedition is usually complete by
+     round 2. OK, or should they hold back?
+
+ T5. The Fracture goes beside the board at a corner, at least 2 spaces
+     from it (and clear of the faction info tiles), with its two egress
+     systems at the ends of the chain (your 0.28.0 answer). The printed
+     tiles have each egress second from an end - keep the ends?
+
+ T6. Ingress tokens when a breakthrough roll brings in the Fracture: 3 per
+     synergy colour, placed by the roller (bots: near their home), then one
+     in Thunder's Edge's system (or on Mecatol while the expedition goes
+     on). OK?
+
+ T7. Synergy: the two colours' technologies count as either colour, for
+     prerequisites and for "technologies of N colours" objectives, and
+     their specialty planets stand in for each other. OK?
+
+ T8. Breakthroughs - places where I had to choose:
+     a) Wing Transfer (Argent): you choose the systems for the tokens when
+        you activate; at the end of the action ships move one at a time
+        among them. The bots don't use it (the tokens cost them).
+     b) Void Tether (Empyrean): stops other players' MOVEMENT across that
+        border (not space cannon or "neighbours"); two tethers, the older
+        one moves; the Empyrean never lets anyone through.
+     c) Stellar Genesis (Muaat): Avernus follows a war sun that LEAVES its
+        system for the active system (not one that only passes through).
+     d) Yin Ascendant: the Alliance ability of a random faction nobody plays
+        (never the Keleres).
+     e) Slumberstate Computing (Titans): always offered when Coalescence
+        would start a fight; letting other players allow your sleepers on
+        their planets isn't in.
+     f) Absolute Synergy (Naaz-Rokha): Eidolon Maximum fights as a ship in
+        any space combat in its system, but still moves only when carried.
+        "No hits from unit abilities" and "repair every round" aren't in.
+     g) Valefar Assimilator Z (Nekro): 3 Z tokens; works for the flagship
+        abilities.
+     h) Deepgloom Executable (Yssaril): other players may ask to use Stall
+        Tactics (as their action); then the Yssaril may trade with them -
+        that trade still counts as their trade for the turn. Scheming isn't
+        shared.
+     i) I.I.H.Q. Modernization (Keleres): Custodia Vigilia is a planet card
+        with no place on the board: exhaust it to pay 2 resources or 3
+        influence (not for votes yet).
+     OK?
+
+ T9. The Triad is exhausted like a planet card when you pay (not for
+     votes). Its value is 3 + the kinds of relic fragment you hold. OK?
+
+ T10. The Silver Flame: on anything but a 10 your home system's planets are
+      destroyed and every unit there removed; you can't score public
+      objectives for the rest of the game; the Fracture comes in. OK?
+
+ T11. Black Market Dealings is played when you start negotiating with
+      someone you may trade with right now; that negotiation (the offer and
+      a counter) may then include relics, action cards and your own
+      unscored secret objectives (you can't ask for theirs - they're
+      hidden). The bots never play it. OK?
+
+ T12. The Quantumcore ("synergy for all technology types"): every coloured
+      technology counts as any colour, and specialty planets of any colour
+      cover any prerequisite. OK?
+
+ T13. Mindsieve (Naalu): give the card's owner any promissory note you
+      hold except their own; bots never give Support for the Throne or an
+      Alliance. OK?
+
+ T14. Specialist Compounds (Jol-Nar): offered instead of the 4 resources
+      of the Technology secondary and the 6 of the primary's second
+      technology. OK?
+
+ T15. Bellum Gloriosum (Sol): ground forces and fighters up to the total
+      capacity of the ships you produce (not fighters) don't count against
+      the Production limit. OK?
+
+ T16. Particle Synthesis (Creuss): each wormhole in a system with your
+      ships is Production 1 there, and units you produce in a system cost 1
+      less per wormhole in it. OK?
+
+ T17. Revised Warfare: the free tactical action can activate any system,
+      even one with your command token; Il Na Viroset's "both tokens
+      return" doesn't apply to it. If it activates a system where nothing
+      can happen, the card still finishes (tokens rearranged). OK?
+
+ T18. Revised Construction: "use the Production of 1 of your space docks"
+      - a blockaded dock can't be chosen. OK?
+
+(The Uncharted Space questions below are still open.)
+
+Answer by number ("ok" is fine) or tell me what to change. The 0.31.0,
+0.30.0 and 0.29.0 questions follow below the new ones in case they're still
+open.
+
+NEW IN 0.33.0 (Uncharted Space)
+ U1. The exploration deck is the 16 cards of the Discordant Stars bot's
+     deck. Two more cards exist in its data but are in no deck there (War
+     Forge Ruins, Arcane Shield Emitter), so I left them out. Add them?
+
+ U2. A system added by Star Charts or Azdel's Key gets a frontier token if
+     it has no planets, as at setup. The card doesn't say. OK?
+
+ U3. "Redistribute up to 1 command token" (Distinguished Admiral, Scorched
+     Depot) moves one token from one of your pools to another (the fleet
+     pool must still cover your largest fleet). OK?
+
+ U4. Folded Space moves your units from the space area of that system only
+     (not from its planets), to any system without other players' ships
+     where ships can end their move (no supernova or asteroid field
+     without the technology). OK?
+
+ U5. Arcane Citadel: the infantry comes each time its controller exhausts
+     the planet for any reason (paying, voting, a technology specialty),
+     but not when another player's card exhausts it. Its +1 is for its
+     controller's units in ground combat on that planet. OK?
+
+ U6. Orbital Foundries: Production 2 in that system for the planet's
+     controller (ships go to space, ground forces onto that planet), and
+     the Accretion Engine adds 1 to it as to any unit. OK?
+
+ U7. Forgotten Throne, "score 1 scored secret objective": read as a secret
+     objective another player has already scored, which you meet too. You
+     may also score one of your own unscored secrets you meet, at any time.
+     OK?
+
+ U8. Twilight Mirror: the action is resolved as in the action phase - a
+     tactical action or a component action, never a strategic one, and you
+     don't pass. Bots use it when they have a worthwhile action. OK?
+
+ U9. E6-G0 Network, "at any time": you exhaust it from your action menu on
+     your turn (it doesn't use your action). Should it also be offered at
+     other moments (another player's turn, the agenda phase)?
+
+ U10. Starfall Array is always applied (+1 to each die of a space cannon,
+     bombardment or anti-fighter barrage roll, and 1 more die) since "you
+     may" never hurts. OK?
+
+ U11. Eye of Vogul: the 2 ships are picked when you purge it, right after
+     activating; they may carry units from their own system. OK?
+
+ U12. Confused Sage works on combat rolls and unit ability rolls only;
+     Contagion only in ground combat; Mystic Library swaps a generic
+     technology (not a unit upgrade) for any other with the same number of
+     prerequisites. OK?
+
+ U13. Bots play Abyssal Starpaths when it lets 2 or more of their ships
+     reach the system they activated. They never play it just to block.
+     OK?
+
+ANSWERED (0.32.0): V1 yes - Dark Pact is an action now, with bot logic
+(0.32.1); V2 ok so far; V3 Voidfall gets its own battle look and New Game
+backdrop after Uncharted Space is complete; V4 keep the lattice.
+
+NEW IN 0.32.0 (answered, kept for reference)
+ V1. Trade Convoys is an ACTION now (new games). Dark Pact (Empyrean) reads
+     the same way ("ACTION: place this card face up") but is still placed
+     at once, since you only asked about Trade Convoys. Make Dark Pact an
+     action too?
+
+ V2. Bots buy Trade Convoys from the Hacan for 1-2 trade goods or 2-3
+     commodities when friendly players they can't reach are worth trading
+     with, and play it before passing or when nothing better is on. A bot
+     Hacan sells it for up to 2 trade goods. OK?
+
+ V3. Voidfall changes the tiles only - units, battles, cards and menus stay
+     as they are. Should Voidfall also get its own battle look and New
+     Game backdrop later (like Retrowave has)?
+
+ V4. Each Voidfall tile has a fine triangle lattice and a thin pink double
+     edge, after the Voidfall sector tiles, and a sighting ring with four
+     turning ticks round each planet. Keep them, or plainer?
+
+NEW IN 0.31.0 (Codex Omega cards)
+ C1. Magen Defense Grid had two Codex revisions; I used the newest (Codex
+     IV: infantry with your structures when their system is activated,
+     plus the free hit at the start of a ground combat). OK, or the Codex I
+     version (only the free hit)?
+
+ C2. X-89 Bacterial Weapon, Magmus Reactor and Wormhole Generator were
+     already the Codex versions in the game, so nothing changed for them.
+     Acquiescence, Cybernetic Enhancements and Greyfire Mutagen were too.
+
+ C3. Z'eu (Naalu agent): bots only use it on themselves, when there is a
+     tactical action worth taking outside the home systems. You can give it
+     to any player (they then take their tactical action at once). OK?
+
+ C4. Brother Milor (Yin agent): bots use it only for their own losses; you
+     can also use it for another player's. OK?
+
+ C5. Xxekir Grom Omega has no "purge" - once unlocked it stays for the rest
+     of the game (as the Omega card reads). OK?
+
+NEW IN 0.30.0
+ 1. Assault Cannon on both sides: at the start of a space combat the active
+    player's Assault Cannon resolves first; if it leaves the other side with
+    fewer than 3 non-fighter ships, theirs doesn't fire (that is what
+    happened in your Vuil'raith game: Jol-Nar's destroyed your cruiser
+    first). The feed now says so. Keep it that way, or should both fire
+    because both were triggered at the start of the combat?
+
+ 2. X-1 debts and loans are now paid back at the start of the agenda phase
+    (your tester's request; new games). Before the custodians are taken
+    there is no agenda phase, so a debt waits for the first one. OK?
+
+ 3. Political Censure: bots now elect the player they dislike most
+    (weighted by B-Factor, with some chance in it), never one point short
+    of winning, and vote for themselves only when it would win them the
+    game. OK?
+
+ 4. Picking up ground forces from the active system's own planets to land
+    them on another planet there (LRR 95.1: ships pick up units in the
+    active system too) - only by ships moving in this turn. OK?
+
+ 5. AI Development Algorithm only works for unit upgrades (the card's own
+    wording). You were researching something else in that game, which is
+    why it wasn't offered. When a unit upgrade's prerequisite could come
+    from a specialty planet, the game now asks which to use. OK?
+
+ 6. Research Agreement (Jol-Nar's note): I couldn't make it fail - it is
+    offered whenever Jol-Nar researches a technology you don't have that
+    isn't a faction technology. If it happens again, please make a bug
+    report right after.
+
+ 7. Trade Convoys (Hacan's note) is placed face up the moment you get it -
+    it has no "play" step of its own here. OK?
+
+ 8. Music: you wrote that the first game track should be "Negotiation or
+    Action" at random. I read "Negotiation" as Infiltration (the track you
+    sent) - right?
+
+ 9. Campaign pictures: I used the drone-and-reptile picture for Fated
+    Expedition, the one you sent later for Trade Wars, and painted Eve of
+    the Fall myself. Right?
+
+10. The new Retrowave backdrop (tear, tentacle, cruiser) is on the New Game
+    screen. Did you mean that one, or the title screen?
+
+FROM 0.29.0 (if still open)
+From your bug reports (I replayed your saves)
+ 1. Nekro and the speaker's tie-break: Galactic Threat lets you take a
+    technology from a player who voted for the outcome you predicted. When
+    everyone abstains and the speaker decides the tie, nobody voted for it
+    (LRR 8.19a: the speaker's decision is not a vote), so there is nothing
+    to take. In your game (Wormhole Reconstruction, round
+    4) that is what happened - not a bug. The game now says so in the feed.
+    OK?
+
+ 2. Riders with Galactic Threat (Rearmament Agreement, round 4): all four
+    riders worked - Empyrean got 5 trade goods (Trade Rider), Xxcha 1 VP
+    (Imperial Rider), you 3 command tokens instead of a technology
+    (Technology Rider + Propagation), and you were asked where to place the
+    Warfare Rider's dreadnought and it was placed - the game just didn't say
+    so in the feed. Now it does. OK?
+
+ 3. Tar'mann: you couldn't bombard because the Mentak had 2 PDS on it -
+    Planetary Shield stops Bombardment (LRR 65, 15.1f). The space cannon
+    defense then destroyed your 2 infantry. Not a bug. OK?
+
+ 4. Construction: in your Mahact game you placed one PDS and B then chose
+    "Nothing" for the second. B now goes back a step there instead. OK?
+
+ 5. Trade: the players the Trade card's primary refreshes (X-1 included)
+    have used the secondary ("without spending a command token"), so they
+    are no longer offered it again after sending their commodities away
+    (new games only). OK?
+
+ 6. The game "hanging" on a computer player's turn until you pressed A: I
+    couldn't make it happen here, but found how it can: a card or a combat
+    result can wait for A while nothing on screen shows it (e.g. a combat
+    whose tile isn't drawn). The game now lets such a hidden wait go after
+    a moment. If you still see it, a bug report right after would help (it
+    now includes game_log.txt).
+
+New
+ 7. Your drawn action cards open large only for you (in hot-seat, only the
+    player whose turn it is sees theirs). New public objectives open large
+    for everyone. Both follow MENU > Cards ("timed" = no waiting). OK?
+
+ 8. Leaders: the leader's card shows beside any question that names the
+    leader (use an agent, a hero, Ssruu, ...), and opens large again when
+    it is used. OK?
+
+ 9. Valefar Assimilator X / Y: a red X / Y token on the copied technology,
+    on the Nekro's technology screen (the copied technologies now show
+    there, marked "Copied") and on the owner's own card. Breakthroughs
+    (Valefar Z) will get the same when they come. OK?
+
+10. Thunder's Edge / Discordant Stars emblems: lifted off your label sheet
+    onto a transparent background like the other faction icons (a few may
+    keep a little of the label's glow at the edges). Any that look wrong?
+
+Still open from 0.28.x
+P1. The Fracture: the egress points are now the two end systems: egress,
+    Cocytus, empty, Styx at the bend, empty, Lethe / Phlegethon, egress.
+    OK?
+
+P2. Ground combat aftermath (your J2): the fallen soldiers now stay where
+    they fell, each with a pool of blood that spreads for a second and a
+    half, until the fight's screen closes (the next fight starts on clean
+    ground). Mech wrecks still burn out and fade. OK?
+
+P3. Minister of Peace (your H1): when you hold it you're asked "Yes / No /
+    No, and don't ask again this round". Computer players decide as
+    before. OK?
+
+P4. One Keleres (your G2): the game already works that way - only one seat
+    can be the Keleres (any home), and the faction whose home the Keleres
+    took can't be picked or dealt; the other two parent factions still
+    can. Nothing changed. OK?
+
+P5. Public objectives (your A1): every public objective scored, by anyone,
+    now opens large and waits for A like the secrets (so the status phase
+    can bring several in a row). MENU > Cards: "timed" shows them without
+    waiting. OK?
+
+P6. Leaders: when an agent or hero is used (yours or another player's) its
+    card opens large with its text and waits for A, like action cards
+    (MENU > Cards decides as for the other cards). Unlocking a commander or
+    hero still shows the short banner. OK?
+
+P7. Research from the cards: A opens a card, A again researches it, B goes
+    back to the cards (and on the cards, B undoes like elsewhere). When
+    research is optional (it costs resources), X = "Don't research". OK?
+
+P8. Starting a game (0.28.1: no fade, the music plays on): the flood of
+    1s and 0s 2.5 s, the game coming through 1.7 s, then GAME START! for
+    1.5 s - under 6 seconds, and it can't be skipped. Should A skip it?
+
+P9. The new name: the title screen, the window and the Miyoo's app list say
+    Fallen Imperium; the folders and file names stay "TwilightImperium" so
+    a new version installs over the old one and keeps your save. Rename
+    those too (you'd move your save by hand once)?
+
+P10. The music file is "Action - Twilight Symposium.mp3" (a "/" can't be
+    used in a file name); the title screen shows "Action/Twilight
+    Symposium - Michael Keane", and I added Michael Keane to the credits
+    (music). OK?
+
+P11. Modules lists Thunder's Edge, Discordant Stars and Uncharted Space,
+    greyed out as "coming soon". OK, or other names?
+
+P12. Windows / Steam Deck, moving ships: Space moves them and Q / E change
+    how many - only with Keyboard & mouse controls (with a controller it's
+    as before: left / right change, START moves). OK?
+
+P13. Retrowave Fracture: Cocytus, Styx and Lethe / Phlegethon use the pixel
+    looks of an ice world, an ocean world, a lava world and a grey steel
+    world; the two empty systems use the gravity rift's black hole with
+    pink lightning; the egress points are pink vortexes. All washed red.
+    OK, or different looks for any of them?
+
+P14. Retrowave Thunder's Edge (your description): the face-down expedition
+    side - a grey giant with perpetual storms, mostly hidden in clouds that
+    turn round it, on misty grey space with electricity crawling through
+    it and thunder flashes. The six expedition rewards aren't listed in the
+    large view (the storm hides them) - show them anyway? The uncovered
+    planet waits until Thunder's Edge is in play.
+
+P15. Faction picker: the emblems for Thunder's Edge and Discordant Stars are
+    cut from your faction label sheet as round medallions (with the
+    label's background glow). Your sheet also has eight more factions on
+    its last page (The Ruby Monarch, Radiant Aur, Avarice Rex, Il Sai Lakoe,
+    The Saint of Swords, Il Na Viroset, El Nen Janovet, A Sickening Lurch)
+    - I left them out because I wasn't sure which set they belong to.
+    Which one is it, and should they be listed too?
+
+P16. The one-line descriptions of the 25 playable factions are my own
+    wording (how each one plays, in a sentence). Any you'd like changed?
