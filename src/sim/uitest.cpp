@@ -7,6 +7,7 @@
 //  3. runs the real game screen with computer players only at normal speed
 //     and saves frames of the announcements, flashes and combat panel
 //     (watch_*.ppm).
+#include <algorithm>
 #include <cstdio>
 #include <cstdlib>
 #include <cstring>

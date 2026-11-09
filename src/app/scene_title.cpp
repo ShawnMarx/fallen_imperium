@@ -132,6 +132,8 @@ public:
         drawTextAligned(c, FONT_SM, 0, 110, c.width(), Align::Center,
 #ifdef _WIN32
                         "Windows version \xE2\x80\x94 " TI4_STAGE, theme::dim);
+#elif defined(TI4_WEB)
+                        "Web version \xE2\x80\x94 " TI4_STAGE, theme::dim);
 #elif defined(TI4_SDL2)
                         "Steam Deck / Linux version \xE2\x80\x94 " TI4_STAGE, theme::dim);
 #else

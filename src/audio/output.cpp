@@ -15,7 +15,9 @@
 #include <windows.h>
 #include <mmsystem.h>
 #elif defined(TI4_SDL2)
+#ifndef __EMSCRIPTEN__
 #include <dlfcn.h>
+#endif
 #include <SDL2/SDL.h>
 #else
 #include <cerrno>
@@ -99,6 +101,14 @@ class SdlOut : public Output {
 public:
     const char* name() const override { return "SDL2 audio"; }
     bool open(int& rate) override {
+#ifdef __EMSCRIPTEN__
+        // web: SDL2 is linked in (Emscripten's port; the browser's Web Audio underneath)
+        initSub_ = &SDL_InitSubSystem;
+        openDev_ = &SDL_OpenAudioDevice;
+        pause_ = &SDL_PauseAudioDevice;
+        closeDev_ = &SDL_CloseAudioDevice;
+        getError_ = &SDL_GetError;
+#else
         lib_ = dlopen("libSDL2-2.0.so.0", RTLD_NOW | RTLD_LOCAL);
         if (!lib_) lib_ = dlopen("./lib/libSDL2-2.0.so.0", RTLD_NOW | RTLD_LOCAL);
         if (!lib_) return false;
@@ -109,6 +119,7 @@ public:
         pause_ = reinterpret_cast<void (*)(SDL_AudioDeviceID, int)>(sym("SDL_PauseAudioDevice"));
         closeDev_ = reinterpret_cast<void (*)(SDL_AudioDeviceID)>(sym("SDL_CloseAudioDevice"));
         getError_ = reinterpret_cast<const char* (*)()>(sym("SDL_GetError"));
+#endif
         if (!initSub_ || !openDev_ || !pause_ || !closeDev_) return false;
         if (initSub_(SDL_INIT_AUDIO) != 0) {
             LOG("audio: SDL audio init failed: %s", getError_ ? getError_() : "?");

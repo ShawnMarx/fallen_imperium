@@ -6,7 +6,9 @@
 // reproduces the game exactly because all randomness comes from a seeded Rng.
 // Undo works the same way: replay every answer except the last one.
 #pragma once
-#ifndef _WIN32
+#if defined(__EMSCRIPTEN__)
+#include <emscripten/fiber.h>
+#elif !defined(_WIN32)
 #include <ucontext.h>
 #endif
 
@@ -247,6 +249,12 @@ private:
     static void __stdcall fiberProc(void* self);
     void* mainFiber_ = nullptr;
     void* fiber_ = nullptr;
+#elif defined(__EMSCRIPTEN__)
+    // The web build: no ucontext in WebAssembly, so the game runs on an
+    // Emscripten fiber (stack switching through Asyncify).
+    static void fiberProc(void* self);
+    emscripten_fiber_t mainFib_{}, gameFib_{};
+    std::vector<char> stack_, mainAsync_, gameAsync_;
 #else
     static void trampoline(uint32_t lo, uint32_t hi);
     ucontext_t mainCtx_{}, fiberCtx_{};

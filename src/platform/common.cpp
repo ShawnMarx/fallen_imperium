@@ -34,6 +34,21 @@ std::unique_ptr<Platform> makeSdlPlatform() { return nullptr; }
 #include <sys/syscall.h>
 #include <unistd.h>
 
+#ifdef __EMSCRIPTEN__
+#include <emscripten.h>
+// web: the ordinary clock, and a sleep that hands the browser a turn (Asyncify)
+void monotonicNow(timespec* ts) {
+    if (clock_gettime(CLOCK_MONOTONIC, ts) != 0) {
+        ts->tv_sec = 0;
+        ts->tv_nsec = 0;
+    }
+}
+
+void sleepMs(uint32_t ms) { emscripten_sleep(ms); }
+
+std::unique_ptr<Platform> makeFbdevPlatform() { return nullptr; }  // (Miyoo backends: not in the web build)
+std::unique_ptr<Platform> makeSdlPlatform() { return nullptr; }
+#else
 // clock_gettime is called through syscall() so the program only needs glibc
 // features that every Miyoo firmware has (the libc wrapper needs glibc 2.17).
 void monotonicNow(timespec* ts) {
@@ -49,6 +64,7 @@ void sleepMs(uint32_t ms) {
     ts.tv_nsec = long(ms % 1000) * 1000000L;
     nanosleep(&ts, nullptr);
 }
+#endif
 
 bool replaceFile(const std::string& from, const std::string& to) { return std::rename(from.c_str(), to.c_str()) == 0; }
 

@@ -40,6 +40,7 @@ make host            # the PC build for testing: build/host/ti4
 make test            # automated screen tests and simulated games (screenshots in build/test)
 make windows-toolchain && make windows-package   # dist/TI4-Windows-<version>.zip
 make linux-package                                 # dist/TI4-SteamDeck-<version>.tar.gz
+make web                                           # build/web/ - the browser version (needs Emscripten)
 ```
 
 `ti4 --simulate N` plays N computer-only games and checks every answer against the rules.

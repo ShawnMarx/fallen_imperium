@@ -1,5 +1,6 @@
 // The mixer (0.27.0): sound effect voices + the music stream, pulled by the
 // platform's sound output (audio/output.cpp) on its own thread.
+#include <cstdlib>
 #include <algorithm>
 #include <atomic>
 #include <cstdio>
@@ -181,6 +182,11 @@ std::string findTrack(int t) {
     for (const char* pre : {"assets/music/", "../assets/music/"}) paths.push_back(std::string(pre) + dev[t] + "-miyoo.mp3");
     for (const std::string& p : paths)
         if (exists(p)) return p;
+#ifdef TI4_WEB
+    // web: the hour-long game tracks are fetched by the page after the game starts
+    // (web/shell.html); until they land, opening the track just fails and is retried
+    if (t != kTrackTitle) return std::string("../assets/music/") + dev[t] + "-pc.mp3";
+#endif
     return "";
 }
 
@@ -466,7 +472,11 @@ void start(Settings& s) {
     g_running = true;
     g_status = std::string(g_out->name()) + ", " + std::to_string(g_rate) + " Hz" + (g_haveMusic ? ", music on" : ", no music file");
     LOG("audio: %s", g_status.c_str());
+#ifdef __EMSCRIPTEN__
+    buildSounds();  // web: no threads - made here, before the title screen
+#else
     g_builder = std::thread(buildSounds);  // the effects are ready a moment later
+#endif
 }
 
 void stop(Settings& s) {

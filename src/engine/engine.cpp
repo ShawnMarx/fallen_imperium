@@ -19,6 +19,9 @@ namespace {
 struct AbortGame {};
 #ifndef _WIN32
 constexpr size_t kStackSize = 1024 * 1024;
+#ifdef __EMSCRIPTEN__
+constexpr size_t kAsyncifySize = 1024 * 1024;  // web: room to save a suspended call stack
+#endif
 #endif
 const char* kSaveMagic = "TI4MIYOO-SAVE";
 constexpr int kSaveFormat = 14;  // 1 = v0.2.x, 2 = v0.3.x, 3 = v0.4.0, 4 = v0.4.1, 5 = v0.5.0, 6 = v0.5.1, 7 = v0.6.0, 8 = v0.7.0, 9 = v0.8.0, 10 = v0.8.1, 11 = v0.9.0, 12 = v0.10.0, 13 = v0.11.0, 14 = v0.12.0
@@ -90,6 +93,15 @@ void Engine::switchToGame() {
 }
 
 void Engine::switchToMain() { SwitchToFiber(mainFiber_); }
+#elif defined(__EMSCRIPTEN__)
+void Engine::fiberProc(void* self) {
+    Engine* e = static_cast<Engine*>(self);
+    e->fiberMain();
+    for (;;) e->switchToMain();  // a fiber must never return
+}
+
+void Engine::switchToGame() { emscripten_fiber_swap(&mainFib_, &gameFib_); }
+void Engine::switchToMain() { emscripten_fiber_swap(&gameFib_, &mainFib_); }
 #else
 void Engine::trampoline(uint32_t lo, uint32_t hi) {
     uintptr_t p = uintptr_t(lo);
@@ -149,6 +161,13 @@ void Engine::start(const Setup& s) {
         finished_ = true;
         return;
     }
+#elif defined(__EMSCRIPTEN__)
+    stack_.assign(kStackSize, 0);
+    if (mainAsync_.empty()) mainAsync_.assign(kAsyncifySize, 0);
+    gameAsync_.assign(kAsyncifySize, 0);
+    emscripten_fiber_init_from_current_context(&mainFib_, mainAsync_.data(), mainAsync_.size());
+    emscripten_fiber_init(&gameFib_, &Engine::fiberProc, this, stack_.data(), stack_.size(), gameAsync_.data(),
+                          gameAsync_.size());
 #else
     stack_.assign(kStackSize, 0);
     getcontext(&fiberCtx_);

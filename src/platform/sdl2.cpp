@@ -17,7 +17,9 @@
 //   Mouse / touch screen: point, left click (tap) = A, right drag = camera,
 //     right click = B, wheel = smooth zoom.
 #ifdef TI4_SDL2
+#ifndef __EMSCRIPTEN__
 #include <dlfcn.h>
+#endif
 
 #include <algorithm>
 #include <cmath>
@@ -37,6 +39,12 @@
 #include "platform/platform.h"
 
 namespace {
+
+#ifdef __EMSCRIPTEN__
+constexpr bool kWeb = true;  // F11 is left to the browser
+#else
+constexpr bool kWeb = false;
+#endif
 
 struct Api {
     int (*Init)(Uint32);
@@ -129,6 +137,40 @@ public:
     const char* name() const override { return "sdl2"; }
 
     bool init() override {
+#ifdef __EMSCRIPTEN__
+        // the web build links SDL2 in (Emscripten's port), so no dlopen
+        api_.Init = &SDL_Init;
+        api_.Quit = &SDL_Quit;
+        api_.GetError = &SDL_GetError;
+        api_.SetHint = &SDL_SetHint;
+        api_.GetDesktopDisplayMode = &SDL_GetDesktopDisplayMode;
+        api_.CreateWindow = &SDL_CreateWindow;
+        api_.DestroyWindow = &SDL_DestroyWindow;
+        api_.SetWindowFullscreen = &SDL_SetWindowFullscreen;
+        api_.GetWindowFlags = &SDL_GetWindowFlags;
+        api_.CreateRenderer = &SDL_CreateRenderer;
+        api_.DestroyRenderer = &SDL_DestroyRenderer;
+        api_.RenderSetLogicalSize = &SDL_RenderSetLogicalSize;
+        api_.SetRenderDrawColor = &SDL_SetRenderDrawColor;
+        api_.RenderClear = &SDL_RenderClear;
+        api_.RenderCopy = &SDL_RenderCopy;
+        api_.RenderPresent = &SDL_RenderPresent;
+        api_.CreateTexture = &SDL_CreateTexture;
+        api_.DestroyTexture = &SDL_DestroyTexture;
+        api_.UpdateTexture = &SDL_UpdateTexture;
+        api_.PollEvent = &SDL_PollEvent;
+        api_.NumJoysticks = &SDL_NumJoysticks;
+        api_.IsGameController = &SDL_IsGameController;
+        api_.GameControllerOpen = &SDL_GameControllerOpen;
+        api_.GameControllerName = &SDL_GameControllerName;
+        api_.GetKeyName = &SDL_GetKeyName;
+        api_.ShowCursor = &SDL_ShowCursor;
+        api_.GetRendererOutputSize = &SDL_GetRendererOutputSize;
+        api_.GetWindowSize = &SDL_GetWindowSize;
+        api_.GetVersion = &SDL_GetVersion;
+        api_.SetWindowSize = &SDL_SetWindowSize;
+        api_.SetWindowPosition = &SDL_SetWindowPosition;
+#else
         static const char* libs[] = {"libSDL2-2.0.so.0", "./lib/libSDL2-2.0.so.0", "libSDL2.so"};
         for (const char* l : libs)
             if ((lib_ = dlopen(l, RTLD_NOW | RTLD_LOCAL)) != nullptr) {
@@ -179,6 +221,7 @@ public:
         sym(api_.SetWindowSize, "SDL_SetWindowSize");
         sym(api_.SetWindowPosition, "SDL_SetWindowPosition");
         if (!ok) return false;
+#endif
 
         if (api_.Init(SDL_INIT_VIDEO | SDL_INIT_GAMECONTROLLER | SDL_INIT_EVENTS) != 0) {
             LOG("sdl2: SDL_Init failed: %s", api_.GetError());
@@ -201,7 +244,13 @@ public:
                 break;
             }
         // (0.27.0: full screen to start with - the Options screen / F11 make it a window)
+#ifdef __EMSCRIPTEN__
+        const bool full = false;  // web: the canvas fills the browser tab (the page's CSS), and follows it
+        dw = std::max(kW, dw);
+        dh = std::max(kH, dh);
+#else
         const bool full = !std::getenv("TI4_WINDOWED");
+#endif
         dispW_ = dw;
         dispH_ = dh;
         winW_ = kW * scale;
@@ -211,7 +260,7 @@ public:
         std::string title = std::string("Fallen Imperium ") + TI4_VERSION;
         // (full screen: the window is made screen-sized too, for desktops without a window manager)
         win_ = api_.CreateWindow(title.c_str(), SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED, full ? dw : winW_,
-                                 full ? dh : winH_, SDL_WINDOW_RESIZABLE | (full ? SDL_WINDOW_FULLSCREEN_DESKTOP : 0));
+                                 full ? dh : winH_, SDL_WINDOW_RESIZABLE | kHighDpi | (full ? SDL_WINDOW_FULLSCREEN_DESKTOP : 0));
         if (!win_) {
             LOG("sdl2: SDL_CreateWindow failed: %s", api_.GetError());
             return false;
@@ -231,7 +280,11 @@ public:
         SDL_version v{};
         api_.GetVersion(&v);
         preciseWheel_ = v.major > 2 || (v.major == 2 && (v.minor > 0 || v.patch >= 18));
+#ifdef __EMSCRIPTEN__
+        deck_ = false;  // web: a 1280x800 browser window is not a Deck (keyboard & mouse first)
+#else
         deck_ = std::getenv("SteamDeck") != nullptr || (dw == 1280 && dh == 800);
+#endif
         for (int i = 0; i < api_.NumJoysticks(); ++i) openPad(i);
         LOG("sdl2: display %dx%d, window %dx%d%s", dw, dh, winW_, winH_, full ? " (full screen)" : "");
         return true;
@@ -259,7 +312,7 @@ public:
                     if (e.key.repeat) break;  // the game repeats by itself
                     const SDL_Keycode k = e.key.keysym.sym;
                     const bool down = e.type == SDL_KEYDOWN;
-                    if (down && (k == SDLK_F11 || (k == SDLK_RETURN && (e.key.keysym.mod & KMOD_ALT)))) {
+                    if (down && (k == SDLK_F11 && !kWeb || (k == SDLK_RETURN && (e.key.keysym.mod & KMOD_ALT)))) {
                         fullscreenKey();
                         break;
                     }
@@ -368,7 +421,11 @@ public:
     void configure(Settings& st) override {
         settings_ = &st;
         if (st.get("controls").empty()) st.setInt("controls", deck_ ? 1 : 0);  // the Deck: its own buttons
-        if (st.get("fullscreen").empty()) st.setInt("fullscreen", 1);  // full screen to start with (0.27.0)
+#ifdef __EMSCRIPTEN__
+        st.setInt("fullscreen", 0);  // web: the browser tab is the window (the browser's own F11 for full screen)
+#else
+        if (st.get("fullscreen").empty()) st.setInt("fullscreen", 1);
+#endif  // full screen to start with (0.27.0)
         sharp_ = st.getInt("screen", 1) == 1;
         wide_ = sharp_ && st.getInt("wide", 1) == 1;  // (0.46.0; the Original picture stays 640x480)
         controller_ = st.getInt("controls", 0) == 1;
@@ -415,13 +472,25 @@ public:
     uint32_t ticks() override { return monotonicMs(); }
 
     void waitFrame(uint32_t start, bool idle) override {
+#ifdef __EMSCRIPTEN__
+        // web: always hand the browser a turn (Asyncify), or the page never draws
+        const uint32_t budget = idle ? 33 : 16;
+        const uint32_t spent = monotonicMs() - start;
+        sleepMs(spent < budget ? budget - spent : 0);
+#else
         const uint32_t budget = idle ? 33 : vsync_ ? 8 : 16;  // (vsync: the present already waited)
         const uint32_t spent = monotonicMs() - start;
         if (spent < budget) sleepMs(budget - spent);
+#endif
     }
 
 private:
     static constexpr int kW = 640, kH = 480;
+#ifdef __EMSCRIPTEN__
+    static constexpr Uint32 kHighDpi = SDL_WINDOW_ALLOW_HIGHDPI;  // web: draw at the screen's real pixels
+#else
+    static constexpr Uint32 kHighDpi = 0;
+#endif
     static constexpr int kMaxW = 1120;  // ~21:9; anything wider gets bars at the sides
     bool vsync_ = false;
 

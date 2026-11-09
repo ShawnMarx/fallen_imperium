@@ -128,7 +128,13 @@ int main(int argc, char** argv) {
 #ifdef _WIN32
     windowsStartup(argc);
 #endif
-#ifdef TI4_SDL2
+#ifdef __EMSCRIPTEN__
+    // web: the game's files are in /assets (packed in); settings, save and log live
+    // in /save, the browser's own storage for this site (IndexedDB, kept between visits).
+    // The page (web/shell.html) mounts and loads /save before main() runs, and
+    // writes it back every few seconds and when the tab is hidden.
+    if (chdir("/save") != 0) {}
+#elif defined(TI4_SDL2)
     {  // Linux / Steam Deck: settings, save, log and icons.dat live next to the program
         char exe[1024];
         ssize_t n = readlink("/proc/self/exe", exe, sizeof exe - 1);

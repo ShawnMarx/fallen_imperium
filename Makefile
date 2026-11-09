@@ -16,6 +16,8 @@
 #   make art         campaign backdrops -> assets/art/ (Python + numpy + Pillow; in git)
 #   make portraits   faction codec portraits -> assets/art/portraits-pc.png (tools/portraits; in git)
 #   make lines       negotiation lines tools/lines/*.txt -> src/ui/gen/lines.inc (in git)
+#   make web         the browser version (Emscripten: brew install emscripten) -> build/web/
+#   make serve-web   serve build/web on WEB_PORT (default 8000) for a quick try
 #   make music       re-encode the owner's music tracks -> assets/music/ (ffmpeg; not in git; *_SRC=...)
 
 VERSION   := $(shell sed -n 's/^\#define TI4_VERSION "\(.*\)"/\1/p' src/app/app.h)
@@ -44,7 +46,7 @@ APPDIR    := TwilightImperium
 PKGROOT   := build/package
 ZIP       := dist/TI4-Miyoo-$(VERSION).zip
 
-.PHONY: art portraits lines all host miyoo package windows windows-package windows-toolchain test font icons retro voidfall music linux linux-package toolchain clean
+.PHONY: web serve-web art portraits lines all host miyoo package windows windows-package windows-toolchain test font icons retro voidfall music linux linux-package toolchain clean
 
 all: host
 
@@ -99,6 +101,42 @@ linux-package: build/linux/ti4
 	rm -f dist/TI4-SteamDeck-$(VERSION).tar.gz && tar -czf dist/TI4-SteamDeck-$(VERSION).tar.gz -C build/linuxpkg TwilightImperium
 	cp build/linux/ti4.map dist/TI4-SteamDeck-$(VERSION).map
 	@echo "Built dist/TI4-SteamDeck-$(VERSION).tar.gz"
+
+# ---- Web build (Emscripten -> WebAssembly) -------------------------------------
+# The SDL2 backend again, with Emscripten's own SDL2 linked in. The rules engine's
+# coroutine and the main loop's frame waits both switch stacks through Asyncify.
+# The game's files are packed into ti4.data (/assets); saves and settings go to
+# /save in the browser's IndexedDB (see web/shell.html). Serve build/web with any
+# static web server - nothing runs on the server, the game runs in the browser.
+EMXX      ?= em++
+WEB_PORT  ?= 8000
+WEB_SRCS  := $(filter-out src/platform/win32.cpp src/platform/fbdev.cpp src/platform/sdl12.cpp,$(SRCS))
+WEB_OBJS  := $(WEB_SRCS:src/%.cpp=build/web/obj/%.o)
+WEB_CXX   := -std=c++17 -O2 -Wall -Wextra -Wno-unused-parameter -Isrc -Ithird_party -MMD -MP \
+             -DTI4_SDL2 -DTI4_WEB -sUSE_SDL=2 -fexceptions
+WEB_LD    := -sUSE_SDL=2 -fexceptions -sASYNCIFY -sASYNCIFY_STACK_SIZE=1048576 -sSTACK_SIZE=8388608 \
+             -sALLOW_MEMORY_GROWTH -sINITIAL_MEMORY=134217728 -sFORCE_FILESYSTEM -lidbfs.js \
+             -sEXIT_RUNTIME=0 --shell-file web/shell.html
+WEB_FILES := assets/icons.dat assets/retro.dat assets/retro-pc.dat assets/voidfall-pc.dat \
+             assets/art/eve_of_the_fall-pc.jpg assets/art/fated_expedition-pc.jpg assets/art/trade_wars-pc.jpg \
+             assets/art/twilights_fall-pc.jpg assets/art/action_back-pc.png assets/art/portraits-pc.png \
+             assets/art/codec_space-pc.jpg assets/art/codec_alert-pc.jpg
+# music (not in git - make music, or the MP3s from a release download): the short title
+# track is packed in; the two hour-long game tracks are served beside it as music/*.mp3
+# and fetched in the background once the game is running
+WEB_MUSIC := $(wildcard assets/music/title-pc.mp3)
+WEB_LATE  := $(wildcard assets/music/action-pc.mp3 assets/music/infiltration-pc.mp3)
+web: build/web/index.html
+build/web/index.html: $(WEB_OBJS) web/shell.html $(WEB_FILES) $(WEB_MUSIC) $(WEB_LATE)
+	$(EMXX) $(WEB_OBJS) -o $@ $(WEB_LD) $(foreach f,$(WEB_FILES) $(WEB_MUSIC),--preload-file $(f)@/$(f))
+	rm -rf build/web/music && mkdir -p build/web/music
+	$(if $(WEB_LATE),cp $(WEB_LATE) build/web/music/)
+	@echo "Built build/web/ (open index.html through a web server)"
+build/web/obj/%.o: src/%.cpp
+	@mkdir -p $(dir $@)
+	$(EMXX) $(WEB_CXX) -c $< -o $@
+serve-web: web
+	cd build/web && python3 -m http.server $(WEB_PORT) --bind 127.0.0.1
 
 # ---- Windows build (cross-compiled with llvm-mingw) ---------------------------
 # One .exe with everything linked in: it only needs Windows 10 or 11.
@@ -194,4 +232,4 @@ toolchain:
 clean:
 	rm -rf build dist
 
--include $(HOST_OBJS:.o=.d) $(MIYOO_OBJS:.o=.d) $(WIN_OBJS:.o=.d) $(LINUX_OBJS:.o=.d)
+-include $(HOST_OBJS:.o=.d) $(MIYOO_OBJS:.o=.d) $(WIN_OBJS:.o=.d) $(LINUX_OBJS:.o=.d) $(WEB_OBJS:.o=.d)

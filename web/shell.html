@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Fallen Imperium</title>
+<link rel="icon" href="data:,">
+<style>
+  html, body { margin: 0; height: 100%; background: #000; overflow: hidden; }
+  /* SDL2 (resizable window) follows the canvas's CSS size, so the game fills the tab */
+  #canvas { display: block; width: 100vw; height: 100vh; outline: none; cursor: default; }
+  #status { position: fixed; inset: 0; display: flex; align-items: center; justify-content: center;
+            flex-direction: column; gap: 12px; color: #9ad; font: 16px/1.4 system-ui, sans-serif;
+            pointer-events: none; }
+  #bar { width: 260px; height: 6px; background: #123; border-radius: 3px; overflow: hidden; }
+  #bar > div { height: 100%; width: 0; background: #6cf; transition: width .2s; }
+</style>
+</head>
+<body>
+<canvas id="canvas" tabindex="-1" oncontextmenu="event.preventDefault()"></canvas>
+<div id="status"><div id="msg">Loading Fallen Imperium…</div><div id="bar"><div></div></div></div>
+<script>
+  // Saves, settings and the log live in /save: the browser's IndexedDB for this
+  // site, loaded before main() and written back every few seconds, when the tab is
+  // hidden and when it closes. (They stay in this browser on this device.)
+  var statusEl = document.getElementById('status'), msg = document.getElementById('msg'),
+      bar = document.querySelector('#bar > div');
+  function persist() {
+    if (typeof FS === 'undefined' || !Module.saveReady || Module.syncing) return;
+    Module.syncing = true;
+    FS.syncfs(false, function (err) { Module.syncing = false; if (err) console.warn('save sync failed', err); });
+  }
+  var Module = {
+    canvas: document.getElementById('canvas'),
+    preRun: [function () {
+      FS.mkdir('/save');
+      FS.mount(IDBFS, {}, '/save');
+      addRunDependency('load-save');
+      FS.syncfs(true, function (err) {
+        if (err) console.warn('could not load saves', err);
+        Module.saveReady = true;
+        removeRunDependency('load-save');
+      });
+    }],
+    onRuntimeInitialized: function () {
+      statusEl.style.display = 'none';
+      Module.canvas.focus();
+      setInterval(persist, 5000);
+      // the hour-long game tracks: fetched now, in the background (the game picks
+      // each one up the next time it asks for it; a missing file just means no music)
+      FS.mkdirTree('/assets/music');
+      ['action-pc.mp3', 'infiltration-pc.mp3'].forEach(function (n) {
+        fetch('music/' + n).then(function (r) { if (!r.ok) throw r.status; return r.arrayBuffer(); })
+          .then(function (b) { FS.writeFile('/assets/music/' + n, new Uint8Array(b)); })
+          .catch(function (e) { console.log('no ' + n + ' (' + e + ')'); });
+      });
+    },
+    setStatus: function (t) {
+      if (!t) return;
+      var m = t.match(/\((\d+(?:\.\d+)?)\/(\d+)\)/);
+      if (m) { bar.style.width = (100 * m[1] / m[2]) + '%'; msg.textContent = 'Downloading the game…'; }
+      else msg.textContent = t;
+    },
+    print: function (t) { console.log(t); },
+    printErr: function (t) { console.warn(t); }
+  };
+  document.addEventListener('visibilitychange', function () { if (document.hidden) persist(); });
+  window.addEventListener('pagehide', persist);
+  window.addEventListener('click', function () { Module.canvas.focus(); });
+  window.onerror = function (e) {
+    statusEl.style.display = 'flex';
+    msg.textContent = 'The game stopped: ' + e + ' (details in the browser console)';
+  };
+</script>
+{{{ SCRIPT }}}
+</body>
+</html>
