@@ -3,7 +3,7 @@
 An unofficial fan-made digital version of **Twilight Imperium 4th Edition** for Windows and the Steam Deck
 (Linux), played against computer opponents (3 to 8 players, or hot-seat with friends).
 
-**Current version: 0.57.2 (Pre-Beta).** Downloads are on the [Releases](../../releases) page.
+**Current version: 0.58.2 (Pre-Beta).** Downloads are on the [Releases](../../releases) page.
 
 > Unofficial fan project. Twilight Imperium is a trademark of Fantasy Flight Games; this project is not
 > affiliated with or endorsed by Fantasy Flight Games or Asmodee. It is free and not for sale.
